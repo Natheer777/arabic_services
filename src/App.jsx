@@ -7,6 +7,10 @@ import { useEffect , useState } from 'react'
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLine } from "react-icons/fa";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 const languages = [
  {
   code :"ja",
@@ -47,16 +51,56 @@ useEffect(() => {
   document.body.dir = currentLanguage.dir || "ltr";
   document.title = t("app_title");
 }, [currentLanguage, t]);
+//////////////////////////
+const [showIcons, setShowIcons] = useState(false);
+
+const toggleIcons = () => {
+  setShowIcons(!showIcons);
+};
+
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/arabic_services/" element={<Home />} />
-        </Routes>
-      </Router>
+      <div className="social">
+        <ul onClick={toggleIcons} style={{ cursor: "pointer" }}>
+          <li className="click">
+            <IoChatbubbleEllipsesOutline />
+          </li>
+          {showIcons && (
+            <>
+              <li className="line top">
+                <a href="https://line.me/ti/p/IuAqVt59QV">
+                  <FaLine />
+                </a>
+              </li>
+              <li className="email top">
+                <a href="mailto:contact@sawagroup.jp">
+                  <MdEmail />
+                </a>
+              </li>
+              <li className="whatsapp top">
+                <a href="https://wa.link/mr0gya">
+                  <FaWhatsapp />
+                </a>
+              </li>
+            </>
+          )}
+        </ul>
+      </div>
+      {/* {loading ? (
+        <img className="Loading" src={Logo} alt="" />
+      ) : ( */}
+        <>
+          <Router>
+            <Routes>
+              <Route path="/arabic_services/" element={<Home />} />
+            </Routes>
+          </Router>
+        </>
+      {/* )} */}
     </>
-  )
+  );
 }
+
 
 export default App

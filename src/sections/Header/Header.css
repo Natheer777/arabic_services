@@ -1,7 +1,13 @@
-.img1 img ,
-.img2 img{
-width: 100%;
-height: auto;
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img,
+.img7 img,
+.img8 img{
+  width: 100%;
+  height: auto;
 }
 
 .title {
@@ -34,9 +40,8 @@ height: auto;
   background-color: #fce875b1;
 }
 
-
 @media screen and (min-width: 5px) and (max-width: 991px) {
-  .title{
+  .title {
     margin-top: 0;
     text-align: center;
     margin-bottom: 15px;
@@ -103,7 +108,6 @@ height: auto;
   }
 }*/
 @media screen and (min-width: 5px) and (max-width: 400px) {
- 
   .title {
     margin-top: 0;
   }
