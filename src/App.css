@@ -32,7 +32,7 @@
   }
    */
 
- */
+ 
   /* .left {
     opacity: 0;
     filter: blur(4px);
@@ -78,7 +78,7 @@
     z-index: 10;
     position: fixed;
     bottom: 8vh;
-    right: -50px;
+    right: 40px;
     border: none;
     color: white;
     transition: 0.9s;
@@ -116,6 +116,6 @@
     transition-delay: 50ms;
   }
   .click {
-    background-color: #ca4555;
+    background-color: #24c662;
   }
   
