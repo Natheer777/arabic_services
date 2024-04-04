@@ -12,45 +12,48 @@ import { MdEmail } from "react-icons/md";
 import { FaLine } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 const languages = [
- {
-  code :"ja",
-  name :"japanese",
-  country_code :"ja",
- } ,
- {
-  code :"en",
-  name :"japanese",
-  country_code :"ja",
- } ,
- {
-  code :"ar",
-  name :"japanese",
-  dir: "rtl",
-  country_code :"ja",
- } 
+  {
+    code: "ja",
+    name: "japanese ",
+    country_code: "ja",
+  },
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+  {
+    code: "ar",
+    name: "العربية",
+    dir: "rtl",
+    country_code: "sa",
+  },
+];
 
-]
 function App() {
-const [t] = useTranslation();
-const [lan , setLan] = useState(navigator.language)
-useEffect(() => {
-  setLan(navigator.language);
-  i18next.changeLanguage(lan);
-  if(!i18next.language.includes(lan)) {
-   i18next.changeLanguage("en")
-  }else{
-i18next.changeLanguage(lan)
-}
-},[lan]);
-/////////////////////////////////
-const currentLanguageCode = cookies.get("i18next") || "en";
-const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const [t] = useTranslation();
+  const [lan, setLan] = useState(navigator.language);
+  useEffect(() => {
+    setLan(navigator.language);
+    i18next.changeLanguage(lan);
+    if (!i18next.languages.includes(lan)) {
+      i18next.changeLanguage("en");
+    } else {
+      i18next.changeLanguage(lan);
+    }
+  }, [lan]);
 
-useEffect(() => {
-  console.log("Setting page stuff");
-  document.body.dir = currentLanguage.dir || "ltr";
-  document.title = t("app_title");
-}, [currentLanguage, t]);
+  ///////////////////////////////
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  // const [t] = useTranslation();
+
+  useEffect(() => {
+    console.log("Setting page stuff");
+    document.body.dir = currentLanguage.dir || "ltr";
+    document.title = t("app_title");
+  }, [currentLanguage, t]);
+
 //////////////////////////
 const [showIcons, setShowIcons] = useState(false);
 
