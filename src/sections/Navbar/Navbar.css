@@ -82,10 +82,14 @@
 @media screen and (min-width: 5px) and (max-width: 992px) {
   .navbar-collapse.collapse.show.collapse ul li a {
     justify-content: center;
+    border-bottom: 2px solid var(--color--green);
   }
   .Social {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .Social li a{
+    border-bottom: none !important;
   }
 }
