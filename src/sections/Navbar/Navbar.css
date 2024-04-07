@@ -1,54 +1,91 @@
-.navbar-brand img{
-    width: 10vh;
+.navbar-brand img {
+  width: 10vh;
 }
-.container-fluid{
-    background-color: white;
-    z-index: 10;
-    flex-direction: row-reverse;
+.container-fluid {
+  background-color: white;
+  z-index: 10;
+  flex-direction: row-reverse;
 }
-.navbar{
-    height: 12vh;
-    background-color: var(--main--color);
+.navbar {
+  height: 12vh;
+  background-color: var(--main--color);
 }
-.navbar ul li{
-    margin-left: 6px;
-    margin-right: 6px;
+.navbar ul li {
+  margin-left: 6px;
+  margin-right: 6px;
 }
-.navbar ul li a{
-    color: var(--color--green);
-    font-size: 13px;
-    align-items: center;
-    display: flex;
-}
-
-.navbar ul li a svg{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.item1{
-    transition-delay: 100ms;
-}
-.item2{
-    transition-delay: 200ms;
-}
-.item3{
-    transition-delay: 300ms;
-}
-.item4{
-    transition-delay: 400ms;
-}
-.item5{
-    transition-delay: 500ms;
+.navbar ul li a {
+  color: var(--color--green);
+  font-size: 13px;
+  align-items: center;
+  display: flex;
 }
 
-.dropdown-menu[data-bs-popper]{
-    /* right: 0; */
-    left: -15vh;
+.navbar ul li a svg {
+  margin-right: 10px;
+  margin-left: 10px;
 }
-@media screen and (min-width:991px){
- 
+.item1 {
+  transition-delay: 100ms;
+}
+.item2 {
+  transition-delay: 200ms;
+}
+.item3 {
+  transition-delay: 300ms;
+}
+.item4 {
+  transition-delay: 400ms;
+}
+.item5 {
+  transition-delay: 500ms;
+}
 
-    .container-fluid{
-        flex-direction: row;
-    }
-   }
+.dropdown-menu[data-bs-popper] {
+  /* right: 0; */
+  left: -15vh;
+}
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    flex-direction: row;
+  }
+}
+.Social {
+  display: flex;
+  margin: 0;
+}
+.Social li {
+  padding: 12px 2px;
+  border-radius: 50px;
+}
+.Social li svg {
+  color: white;
+}
+.linee {
+  background-color: green;
+  transition-delay: 50ms;
+}
+.emaill {
+  background-color: palevioletred;
+}
+.whatsappp {
+  background-color: rgb(10, 177, 10);
+}
+.collapse {
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 5px) and (max-width: 1030px) {
+  .collapse {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 5px) and (max-width: 992px) {
+  .navbar-collapse.collapse.show.collapse ul li a {
+    justify-content: center;
+  }
+  .Social {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

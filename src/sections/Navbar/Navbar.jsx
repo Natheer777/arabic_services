@@ -6,6 +6,9 @@ import { IoPerson } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLine } from "react-icons/fa";
 export default function Navbar() {
   const [t , i18n] = useTranslation()
   return (
@@ -27,7 +30,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse justify-content-end me-3"
+            className="collapse navbar-collapse"
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav">
@@ -97,6 +100,23 @@ export default function Navbar() {
                 </div>
               </li>
             </ul>
+        <ul className="Social">
+              <li className="linee top">
+                <a href="https://line.me/ti/p/IuAqVt59QV">
+                  <FaLine />
+                </a>
+              </li>
+              <li className="emaill top">
+                <a href="mailto:contact@sawagroup.jp">
+                  <MdEmail />
+                </a>
+              </li>
+              <li className="whatsappp top">
+                <a href="https://wa.link/mr0gya">
+                  <FaWhatsapp />
+                </a>
+              </li>
+        </ul>
           </div>
         </div>
       </nav>

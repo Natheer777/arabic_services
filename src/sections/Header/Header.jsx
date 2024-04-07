@@ -19,22 +19,8 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "./Header.css";
-import Data from '../../Data/HeaderImg'
 import { useTranslation } from "react-i18next";
 export default function Header() {
-  const card = Data.map((card) =>{
-    return(
-
-      <SwiperSlide 
-      key={card.id}
-      image={card.Image}
-       /> 
-         )
-    
-    
-      
-    
-  })
   const [t] = useTranslation();
   return (
     <>

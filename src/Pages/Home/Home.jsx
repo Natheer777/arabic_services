@@ -1,4 +1,4 @@
-import {Navbar , Header, About, Slogan, Sawa, Footer, Services, Contact, Vision} from '../../sections/index'
+import {Navbar , Header, About, Slogan, Sawa, Footer, Services, Contact, Vision, Slogan2} from '../../sections/index'
 export default function Home() {
   return (
     <>
@@ -9,6 +9,7 @@ export default function Home() {
     <Slogan />
     <Vision />
     <Services />
+    <Slogan2 />
     <Contact />
     <Footer />
     </>

@@ -1,0 +1,1 @@
+export {default as Card_Slogan} from './Card_Slogan/CardSlogan'
