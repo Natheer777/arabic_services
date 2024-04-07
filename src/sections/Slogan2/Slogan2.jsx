@@ -12,7 +12,7 @@ export default function Sloga2() {
   });
   return (
     <>
-    <div className="cards text-center mt-5 mb-5">
+    <div className="cards text-center  mb-5">
         <div className="card0 left">{card[5]}<p className="card5">{t("")}</p></div>
         <div className="card1 left">{card[6]} <p className="card6">{t("")}</p></div>
         <div className="card2 hidden">{card[7]} <p className="card7">{t("")}</p> </div>

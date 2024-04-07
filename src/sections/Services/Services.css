@@ -3,18 +3,14 @@
     border-radius: 10px;
 }
 .cardDetails h3{
-font-size: 19px;
+font-size: 14px;
+line-height: 2;
 font-weight: 600;
 margin-top: 10px;
 color: var(--color--green);
+text-align: center;
 }
-.cardDetails p{
-font-size: 13px;
-margin-top: 20px;
-font-weight: normal;
-line-height: 2;
 
-}
 .cardServices{
     margin: auto;
     width: 28%;
@@ -23,7 +19,7 @@ line-height: 2;
     text-align: center;
     border-radius: 10px;
     margin-top: 10px;
-    height: 30rem;
+    height: 25rem;
     margin-top: 30px;
 
 }
@@ -56,4 +52,9 @@ line-height: 2;
 }
 .ServicesTitle svg{
     font-size: 28px;
+}
+.rowServices p{
+    font-size: 14px;
+    color: black;
+    opacity: 0.8;
 }

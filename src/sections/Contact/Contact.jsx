@@ -11,7 +11,7 @@ export default function Contact() {
         </div> */}
 
 
-        <form method="POST" action="https://formsubmit.co/contact@sawagroup.jp" encType="multipart/form-data" id="Contact">
+        <form method="POST" action="https://formsubmit.co/contact@arabicsc.com" encType="multipart/form-data" id="Contact">
         <label>{t("Name-form")}</label>
           <input type="text" name="user_name" required />
           <label>{t("Email-form")}</label>

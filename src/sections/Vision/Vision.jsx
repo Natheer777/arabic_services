@@ -1,7 +1,6 @@
 import './Vision.css'
 import { useTranslation } from 'react-i18next'
 import VisionImg from '../../assets/Icons/img1 (5).webp'
-import { PiTargetBold } from "react-icons/pi";
 
 export default function Vision() {
     const [t] = useTranslation() 
@@ -11,8 +10,7 @@ export default function Vision() {
      <div className="container">
       <div className="row">
         <div className="col-lg-6">
-          <h2 className="vision-title right">{t("Vision-h")} <PiTargetBold /></h2>
-          <p className="vision-details right">{t("Vision-p")}</p>
+          <p className="vision-details right mt-5">{t("Vision-p")}</p>
         </div>
         <div className="col-lg-6">
           <img className="vision-img left" src={VisionImg} alt="" />

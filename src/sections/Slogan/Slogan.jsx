@@ -12,7 +12,7 @@ export default function Slogan() {
   });
   return (
     <>
-    <div className="cards text-center mt-5 mb-5">
+    <div className="cards text-center mb-5">
         <div className="card0 left">{card[0]}<p className="card0">{t("")}</p></div>
         <div className="card1 left">{card[1]} <p className="card1">{t("")}</p></div>
         <div className="card2 hidden">{card[2]} <p className="card2">{t("")}</p> </div>

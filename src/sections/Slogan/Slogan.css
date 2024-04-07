@@ -1,13 +1,11 @@
 .cards {
+    background-color: rgb(54, 51, 51);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20vh;
-    column-gap: 12vh;
+    column-gap: 16vh;
     row-gap: 10px;
-    margin-top: 8vh;
-    font-weight: bold;
-    /* color: var(--color--red); */
   }
   .card0,
   .card1,

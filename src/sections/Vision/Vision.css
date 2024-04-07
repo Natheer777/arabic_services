@@ -14,3 +14,8 @@
     width: 100%;
     margin-top: 10vh;
 }
+@media screen and (min-width:5px) and (max-width:991px){
+    .vision-details{
+        text-align: center; 
+   }
+}
