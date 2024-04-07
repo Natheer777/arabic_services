@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  /* .Loading {
+   .Loading {
     width: 6vh;
     position: absolute;
     top: 50%;
@@ -33,10 +33,7 @@
       transform: scale(1);
     }
   }
-   */
-
- 
-  /* .left {
+ .left {
     opacity: 0;
     filter: blur(4px);
     transform: translateX(-2%);
@@ -63,8 +60,7 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-  } */
-  
+  } 
   ::-webkit-scrollbar {
     width: 8px;
     height: 0px;
