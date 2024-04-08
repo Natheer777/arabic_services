@@ -7,6 +7,10 @@
     column-gap: 16vh;
     row-gap: 10px;
   }
+  .cards p{
+    font-size: 15px;
+    color: #fffee0;
+  }
   .card0,
   .card1,
   .card2,
@@ -14,8 +18,7 @@
   .card4,
   .card5{
       margin-top: 10px;
-      color: #111111ae;
-      width: 20vh;
+      width: 22vh;
   }
   .slogan_title{
       color: var(--color--red);
