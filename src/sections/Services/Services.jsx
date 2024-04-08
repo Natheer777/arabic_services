@@ -52,7 +52,8 @@ export default function Services() {
             <h3>{t("Services-card4T")}</h3>
           </div>
         </div>
-        <div className="cardServices shadow p-3 top">
+        <div className="cardServices shadow p-3 top 
+    justify-content-center">
           <div className="imgServices">
             <img src={img5} alt="" />
           </div>
