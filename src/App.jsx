@@ -32,53 +32,53 @@ const languages = [
 
 function App() {
 
-  // useEffect(() => {
-  //   const up = document.querySelectorAll(".social");
+  useEffect(() => {
+    const up = document.querySelectorAll(".social");
 
-  //   const handleScroll = () => {
-  //     window.scrollY >= 200
-  //       ? up.forEach((item) => item.classList.add("look"))
-  //       : up.forEach((item) => item.classList.remove("look"));
-  //   };
+    const handleScroll = () => {
+      window.scrollY >= 200
+        ? up.forEach((item) => item.classList.add("look"))
+        : up.forEach((item) => item.classList.remove("look"));
+    };
 
-  //   window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  // ///////////////////////////////////////////
+  ///////////////////////////////////////////
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     const observer = new IntersectionObserver((entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("show");
-  //         } else {
-  //           entry.target.classList.remove("show");
-  //         }
-  //       });
-  //     });
+  useEffect(() => {
+    setInterval(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
 
-  //     const leftElements = document.querySelectorAll(".left");
-  //     const rightElements = document.querySelectorAll(".right");
-  //     const hiddenElements = document.querySelectorAll(".hidden");
-  //     const topElements = document.querySelectorAll(".top");
-  //     leftElements.forEach((el) => observer.observe(el));
-  //     rightElements.forEach((el) => observer.observe(el));
-  //     hiddenElements.forEach((el) => observer.observe(el));
-  //     topElements.forEach((el) => observer.observe(el));
+      const leftElements = document.querySelectorAll(".left");
+      const rightElements = document.querySelectorAll(".right");
+      const hiddenElements = document.querySelectorAll(".hidden");
+      const topElements = document.querySelectorAll(".top");
+      leftElements.forEach((el) => observer.observe(el));
+      rightElements.forEach((el) => observer.observe(el));
+      hiddenElements.forEach((el) => observer.observe(el));
+      topElements.forEach((el) => observer.observe(el));
 
-  //     return () => {
-  //       leftElements.forEach((el) => observer.unobserve(el));
-  //       rightElements.forEach((el) => observer.unobserve(el));
-  //       hiddenElements.forEach((el) => observer.unobserve(el));
-  //       topElements.forEach((el) => observer.unobserve(el));
-  //     };
-  //   });
-  // }, []);
+      return () => {
+        leftElements.forEach((el) => observer.unobserve(el));
+        rightElements.forEach((el) => observer.unobserve(el));
+        hiddenElements.forEach((el) => observer.unobserve(el));
+        topElements.forEach((el) => observer.unobserve(el));
+      };
+    });
+  }, []);
 
 
 
