@@ -129,7 +129,7 @@ const toggleIcons = () => {
                 </a>
               </li>
               <li className="email top">
-                <a href="mailto:contact@sawagroup.jp">
+                <a href="mailto:contact@arabicsc.com">
                   <MdEmail />
                 </a>
               </li>

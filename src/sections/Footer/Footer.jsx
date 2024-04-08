@@ -55,7 +55,7 @@ export default function Footer() {
                       {t("Line")}
                     </li>
                     </a>
-                    <a href="mailto:contact@sawagroup.jp">
+                    <a href="mailto:contact@arabicsc.com">
                       
 
                     <li>

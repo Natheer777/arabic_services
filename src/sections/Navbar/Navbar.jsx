@@ -107,7 +107,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="emaill top">
-                <a href="mailto:contact@sawagroup.jp">
+                <a href="mailto:contact@arabicsc.com">
                   <MdEmail />
                 </a>
               </li>
