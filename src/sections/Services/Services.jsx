@@ -19,7 +19,7 @@ export default function Services() {
     <div className="container" id="Services">
       <div className="row rowServices">
         <h1 className="ServicesTitle">{t("Services-h")} <TbToolsOff /></h1>
-        <p className="ServicesTitle">{t("Services-p")} <TbToolsOff /></p>
+        <p className="ServicesTitle">{t("Services-p")}</p>
         <div className="cardServices shadow  p-3 top">
           <div className="imgServices">
             <img src={img1} alt="" />
