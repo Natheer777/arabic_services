@@ -6,14 +6,14 @@ import { IoPerson } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
-import { FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaLine } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
+// import { FaLine } from "react-icons/fa";
 export default function Navbar() {
   const [t , i18n] = useTranslation()
   return (
     <>
-     <nav className="navbar navbar-expand-lg navbar-light">
+     <nav className=" container navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <a className="navbar-brand  ms-3 me-3" href="#">
             <img src={Logo} alt="" />
@@ -72,12 +72,12 @@ export default function Navbar() {
                 >
                   <a
                     onClick={() => {
-                      i18n.changeLanguage("ar");
+                      i18n.changeLanguage("ja");
                     }}
                     className="dropdown-item"
                     href="#"
                   >
-                    العربية
+                    日本語
                   </a>
                   <a
                     onClick={() => {
@@ -90,17 +90,17 @@ export default function Navbar() {
                   </a>
                   <a
                     onClick={() => {
-                      i18n.changeLanguage("ja");
+                      i18n.changeLanguage("ar");
                     }}
                     className="dropdown-item"
                     href="#"
                   >
-                    日本語
+                    العربية
                   </a>
                 </div>
               </li>
             </ul>
-        <ul className="Social">
+        {/* <ul className="Social">
               <li className="linee top">
                 <a href="https://line.me/ti/p/IuAqVt59QV">
                   <FaLine />
@@ -116,7 +116,7 @@ export default function Navbar() {
                   <FaWhatsapp />
                 </a>
               </li>
-        </ul>
+        </ul> */}
           </div>
         </div>
       </nav>

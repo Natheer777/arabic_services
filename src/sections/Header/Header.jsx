@@ -36,6 +36,7 @@ export default function Header() {
 
           <div className="Main-img">
             <Swiper
+            dir="ltr"
               spaceBetween={0}
               centeredSlides={true}
               autoplay={{

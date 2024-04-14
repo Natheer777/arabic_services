@@ -6,6 +6,9 @@
   z-index: 10;
   flex-direction: row-reverse;
 }
+.collapse .navbar-collapse{
+  justify-content: start;
+  }
 .navbar {
   height: 12vh;
   background-color: var(--main--color);
@@ -46,9 +49,9 @@
 
 .dropdown-menu[data-bs-popper] {
   /* right: 0; */
-  left: -15vh;
+  left: 0;
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .container-fluid {
     flex-direction: row;
   }
@@ -95,4 +98,4 @@
   .Social li a{
     border-bottom: none !important;
   }
-}
+} */

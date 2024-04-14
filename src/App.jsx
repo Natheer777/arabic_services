@@ -13,6 +13,12 @@ import { FaLine } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 const languages = [
   {
+    code: "ar",
+    name: "العربية",
+    country_code: "ar",
+    dir: "rtl",
+  },
+  {
     code: "ja",
     name: "japanese ",
     country_code: "ja",
@@ -21,12 +27,6 @@ const languages = [
     code: "en",
     name: "English",
     country_code: "gb",
-  },
-  {
-    code: "ar",
-    name: "العربية",
-    dir: "rtl",
-    country_code: "sa",
   },
 ];
 
@@ -103,7 +103,7 @@ function App() {
   useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    // document.title = t("app_title");
   }, [currentLanguage, t]);
 
 //////////////////////////
