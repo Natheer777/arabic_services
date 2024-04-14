@@ -16,7 +16,7 @@
 }
 .navbar ul li a {
   color: var(--color--green);
-  font-size: 13px;
+  font-size: 20px;
   align-items: center;
   display: flex;
 }
