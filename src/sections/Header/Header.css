@@ -7,17 +7,17 @@
 .img7 img,
 .img8 img{
   width: 100%;
-  height: auto;
 }
 
 .title {
   width: 100%;
-  margin-top: 18vh;
+  /* margin-top: 18vh; */
   color: var(--color--green);
   flex-direction: column;
+  text-align: center;
 }
 .title h1 {
-  margin-bottom: 4vh;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 7vh;
 }

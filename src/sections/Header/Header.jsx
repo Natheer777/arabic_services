@@ -26,13 +26,13 @@ export default function Header() {
     <>
       <div className="container">
         <div className="row">
-          <div className="sec1 col-lg-6">
+          <div className="sec1">
             <div className="title  d-flex">
               <h1 className="left">{t("Header-h")}</h1>
               <p className=" right">{t("Header-p")}</p>
             </div>
           </div>
-          <div className="sec2 col-lg-6">
+          <div className="sec2 ">
 
           <div className="Main-img">
             <Swiper
