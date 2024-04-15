@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next'
 import Logo from '../../assets/Logo/لوغو-لغة-1جديد-01.webp'
 import { FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
-import { MdDesignServices } from "react-icons/md";
+import {  GrServices } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
 // import { FaWhatsapp } from "react-icons/fa";
@@ -13,11 +13,24 @@ export default function Navbar() {
   const [t , i18n] = useTranslation()
   return (
     <>
-     <nav className=" container navbar navbar-expand-lg navbar-light">
-        <div className="container-fluid">
-          <a className="navbar-brand  ms-3 me-3" href="#">
+  <div className="container">
+    <div className="title">
+      <ul>
+        <li>
+              <h1 className="left">{t("Header-h")}</h1>
+        </li>
+        <li>
+            <h4 className=" right">{t("Header-p")}</h4>
+        </li>
+        <li>
+        <a className="navbar-brand" href="#">
             <img src={Logo} alt="" />
           </a>
+        </li>
+      </ul>
+            </div>
+     <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container-fluid">
           <button
             className="navbar-toggler"
             type="button"
@@ -47,7 +60,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item item3 hidden">
                 <a className="nav-link" href="#Services">
-              <MdDesignServices />    {t("Navbar-Services")}
+              <GrServices />    {t("Navbar-Services")}
                 </a>
               </li>
               <li className="nav-item item4 hidden">
@@ -123,6 +136,7 @@ export default function Navbar() {
     
     
     
+    </div>
     </>
   )
 }

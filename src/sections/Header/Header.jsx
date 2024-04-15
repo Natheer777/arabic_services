@@ -19,19 +19,14 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "./Header.css";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 export default function Header() {
-  const [t] = useTranslation();
+  // const [t] = useTranslation();
   return (
     <>
       <div className="container">
         <div className="row">
-          <div className="sec1">
-            <div className="title  d-flex">
-              <h1 className="left">{t("Header-h")}</h1>
-              <p className=" right">{t("Header-p")}</p>
-            </div>
-          </div>
+     
           <div className="sec2 ">
 
           <div className="Main-img">
