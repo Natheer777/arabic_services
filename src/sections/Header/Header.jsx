@@ -25,11 +25,9 @@ export default function Header() {
   return (
     <>
       <div className="container">
-        <div className="row">
      
-          <div className="sec2 ">
 
-          <div className="Main-img">
+          <div className="Main-img container">
             <Swiper
             dir="ltr"
               spaceBetween={0}
@@ -54,8 +52,6 @@ export default function Header() {
               <SwiperSlide className="img7"><img src={HeaderImg_07} alt="" /></SwiperSlide>            </Swiper>
           </div>
           </div>
-        </div>
-      </div>
     </>
   );
 }
