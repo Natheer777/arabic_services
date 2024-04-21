@@ -66,12 +66,12 @@
     height: 0px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #f5da8898;
+    background-color: var(--color--green);
     cursor: pointer;
   }
-  ::-webkit-scrollbar-thumb:hover {
+  /* ::-webkit-scrollbar-thumb:hover {
     background-color: #eeb50998;
-  }
+  } */
   
   .social {
     z-index: 10;
