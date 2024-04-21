@@ -1,15 +1,55 @@
-.img1 img,
-.img2 img,
-.img3 img,
-.img4 img,
-.img5 img,
-.img6 img,
-.img7 img,
-.img8 img{
+.img1{
+  background-image: url("../../assets/edite/واجهة-10.webp");
+}
+.img2{
+  background-image: url("../../assets/edite/واجهة-11.webp");
+}
+.img3{
+  background-image: url("../../assets/edite/واجهة-12.webp");
+}
+.img4{
+  background-image: url("../../assets/edite/واجهة-151.webp");
+}
+.img5{
+  background-image: url("../../assets/edite/واجهة-6.webp");
+}
+.img6{
+  background-image: url("../../assets/edite/واجهة-67.webp");
+}
+.img7{
+  background-image: url("../../assets/edite/واجهة-جديدة-2.webp");
+}
+.img8{
+  background-image: url("../../assets/edite/واجهة-جديدة-3.webp");
+}
+.img9{
+  background-image: url("../../assets/edite/واجهة-جديدة.webp");
+}
+.img10{
+  background-image: url("../../assets/edite/واجهة 4.webp");
+}
+.img11{
+  background-image: url("../../assets/edite/واجهة 8.webp");
+}
+
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11{
   width: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
 }
 
 
