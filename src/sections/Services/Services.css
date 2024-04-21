@@ -3,7 +3,7 @@
     border-radius: 10px;
 }
 .cardDetails h3{
-font-size: 14px;
+font-size: 16px;
 line-height: 2;
 font-weight: 600;
 margin-top: 10px;
@@ -23,10 +23,10 @@ text-align: center;
     margin-top: 30px;
 
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 5px;
     height: 0px;
-  }
+  } */
 .rowServices{
     gap: 20px;
     column-gap: 10px;
@@ -49,12 +49,13 @@ text-align: center;
     text-align: center;
     color: var(--color--green);
     margin-top: 20px;
+    font-size: 50px;
 }
 .ServicesTitle svg{
-    font-size: 28px;
+    font-size: 30px;
 }
 .rowServices p{
-    font-size: 14px;
+    font-size: 20px;
     color: black;
     opacity: 0.8;
 }

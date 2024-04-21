@@ -15,21 +15,25 @@ export default function Navbar() {
     <>
   <div className="container">
     <div className="title container">
-      <ul>
-        <li>
-              <h1 className="left">{t("Header-h")}</h1>
-        </li>
-        <li>
-            <h4 className=" right">{t("Header-p")}</h4>
-        </li>
-        <li>
-        <a className="navbar-brand" href="#">
+    <ul>
+    <li>  
+          <h1 className=" left">{t("Header-h")}</h1>
+    </li>
+    <li className="diffrint">
+    <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}>
+      <h4 className={i18n.language === 'ar' ? 'left' : 'right'}>
+        {t("Header-p")}
+      </h4>
+    </marquee>
+
+    </li>
+    <li> <a className="navbar-brand" href="#">
             <img src={Logo} alt="" />
           </a>
-        </li>
-      </ul>
+     </li>
+  </ul>
             </div>
-     <nav className="navbar navbar-expand-lg navbar-light">
+     <nav className="navbar navbar-expand-lg navbar-light mb-3">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
