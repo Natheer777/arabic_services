@@ -32,22 +32,6 @@ const languages = [
 
 function App() {
 
-  useEffect(() => {
-    const up = document.querySelectorAll(".social");
-
-    const handleScroll = () => {
-      window.scrollY >= 200
-        ? up.forEach((item) => item.classList.add("look"))
-        : up.forEach((item) => item.classList.remove("look"));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   ///////////////////////////////////////////
 
   useEffect(() => {
