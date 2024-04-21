@@ -1,16 +1,9 @@
-/* .vision-title{
-    color: var(--color--green);
-    margin-top: 10vh;
-    font-size: 40px;
-    font-weight: bold;
-} */
 .vision-title svg{
     font-size: 30px;
 }
 .vision-details{
     margin-top: 20px;
     line-height: 2.5;
-    /* opacity: 0.9; */
     font-weight: 500;
     font-size: 20px;
 }

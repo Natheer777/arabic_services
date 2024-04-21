@@ -4,9 +4,7 @@
   .about-title {
     font-size: 50px;
     font-weight: bold;
-    /* margin-top: 4vh; */
     color: var(--color--green);
-    /* margin-bottom: 10px; */
   }
   .about-title svg{
     font-size: 30px;
@@ -14,7 +12,6 @@
   .about-details {
     margin-top: 20px;
     line-height: 2.5;
-    /* opacity: 0.9; */
     font-weight: 500;
     font-size: 20px;
   }

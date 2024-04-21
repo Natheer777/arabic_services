@@ -74,26 +74,6 @@
   background-color: #fce875b1;
 }
 
-/* @media screen and (min-width: 5px) and (max-width: 991px) {
-  .title {
-    margin-top: 0;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 5px) and (max-width: 440px) {
-  .title {
-    margin-top: 0;
-  }
-
-  .title h1 {
-    font-size: 3vh;
-  }
-  .title p {
-    font-size: 2.2vh;
-  }
-} */
 
 @media screen and (min-width:850px) and (max-width:1030px ){
  

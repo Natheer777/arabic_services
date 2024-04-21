@@ -1,5 +1,5 @@
 import "./About.css"
-import AboutImg from '../../assets/Icons/img1-_9_.webp'
+import AboutImg from '../../assets/edite/واجهة-6.webp'
 import { IoPerson } from "react-icons/io5";
 
 
