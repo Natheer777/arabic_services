@@ -10,8 +10,8 @@ export default function About() {
     <>
     <div className="container mt-5" id="about">
       <div className="row">
-        <div className="text-center">
-          <h2 className="about-title right">{t("About-h")}<IoPerson /></h2>
+        <div>
+          <h2 className="about-title text-center right">{t("About-h")}<IoPerson /></h2>
           <p className="about-details right">{t("About-p")}</p>           
        
         </div>

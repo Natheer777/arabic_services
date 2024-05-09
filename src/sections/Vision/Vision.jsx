@@ -9,7 +9,7 @@ export default function Vision() {
     <>
      <div className="container">
       <div className="row">
-        <div className="text-center">
+        <div>
           <p className="vision-details right">{t("Vision-p")}</p>
         </div>
         <div className="">

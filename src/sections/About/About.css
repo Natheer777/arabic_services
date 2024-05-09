@@ -14,6 +14,8 @@
     line-height: 2.5;
     font-weight: 500;
     font-size: 20px;
+    display: flex;
+    justify-content: start;
   }
   .about-img {
     width: 100%;
