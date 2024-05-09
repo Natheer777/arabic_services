@@ -110,10 +110,10 @@
    height: 54vh;
   }
   .title h1{
-   font-size: 4.2vh;
+   font-size: 5vh;
   }
   .title h4{
-   font-size: 2.5vh;
+   font-size: 3vh;
   }
  }
  @media screen and (min-width:540px) and (max-width:665px ){
@@ -131,7 +131,7 @@
     height: 40vh;
    }
    .title h1 {
-     font-size: 4vh;
+     font-size: 5vh;
  }
  .title h4 {
      font-size: 2.8vh;
@@ -155,10 +155,10 @@
     width: 12vh;
    }
    .title h1 {
-     font-size: 3.3vh;
+     font-size: 5vh;
  }
  .title h4 {
-     font-size: 2.5vh;
+     font-size: 2.8vh;
  }
  }
  
@@ -180,11 +180,10 @@
       width: 12vh;
     }
    .title h1 {
-     font-size: 2.5vh;
-     width: 100%;
+     font-size: 4vh;
  }
  .title h4 {
-     font-size: 2.2vh;
+     font-size: 2.5vh;
  }
  
  }
@@ -204,14 +203,14 @@
    } 
  
  .navbar-brand img{
-   width: 8vh;
+   width: 9vh;
  }
   
    .title h1 {
-       font-size: 1.8vh;
+       font-size: 3vh;
    }
    .title h4 {
-       font-size: 1.4vh;
+       font-size: 2.5vh;
    }
  }
  
