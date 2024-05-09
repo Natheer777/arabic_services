@@ -1,5 +1,7 @@
 .cards {
     background-color: rgb(10 29 19);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .cards .container .row{
     gap: 10px;
