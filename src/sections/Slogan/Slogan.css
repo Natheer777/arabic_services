@@ -1,8 +1,10 @@
 .cards {
     background-color: rgb(10 29 19);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  }
+  .cards .container .row{
+    gap: 10px;
+  }
+  .Slogans{
     gap: 20vh;
     column-gap: 16vh;
     row-gap: 10px;
@@ -17,9 +19,10 @@
   .card3,
   .card4,
   .card5{
-      margin-top: 10px;
-      width: 22vh;
+      margin:auto;
+      width: 12rem;
   }
+  
   .slogan_title{
       color: var(--color--red);
   }
