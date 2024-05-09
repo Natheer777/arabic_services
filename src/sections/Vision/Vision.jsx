@@ -10,7 +10,7 @@ export default function Vision() {
      <div className="container">
       <div className="row">
         <div className="text-center">
-          <p className="vision-details right mt-5">{t("Vision-p")}</p>
+          <p className="vision-details right">{t("Vision-p")}</p>
         </div>
         <div className="">
           <img className="vision-img left" src={VisionImg} alt="" />
