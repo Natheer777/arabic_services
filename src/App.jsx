@@ -11,6 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLine } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import DesktopViewButton from './components/DesktopViews/DesktopViews'
 const languages = [
   {
     code: "ar",
@@ -100,6 +101,10 @@ const toggleIcons = () => {
 
   return (
     <>
+              <div className="App">
+      <h1>تطبيق React لعرض الموقع بشكل سطح المكتب</h1>
+      <DesktopViewButton />
+    </div>
       <div className="social">
         <ul onClick={toggleIcons} style={{ cursor: "pointer" }}>
           <li className="click">
