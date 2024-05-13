@@ -9,6 +9,9 @@ import { LuLanguages } from "react-icons/lu";
 import { useEffect } from "react";
 export default function Navbar() {
   const [t, i18n] = useTranslation();
+
+  
+
   const toggleDropdown = () => {
     const dropdownContent = document.querySelector(".dropdown-content");
     const isVisible =
