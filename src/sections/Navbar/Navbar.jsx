@@ -47,20 +47,23 @@ export default function Navbar() {
                 {t("Header-h")}
               </h1>
             </li>
+            <li className="diffrint" lang={i18n.language}>
+            {t("Header-p")}
+
+            </li>
             <li>
-              {" "}
               <a className="navbar-brand" href="#">
                 <img src={Logo} alt="" />
               </a>
             </li>
           </ul>
-          <p className="diffrint mt-3" lang={i18n.language}>
+          {/* <p className="diffrint mt-3" lang={i18n.language}>
             {/* <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}> */}
             {/* <h4 className={i18n.language === 'ar' ? 'left' : 'right'}> */}
-            {t("Header-p")}
+            {/* {t("Header-p")} */}
             {/* </h4> */}
             {/* </marquee> */}
-          </p>
+          {/* </p> */}
         </div>
         <nav className="navbar navbar-expand-lg navbar-light mb-3">
           <div className="container-fluid">
@@ -111,7 +114,7 @@ export default function Navbar() {
                   <div  className="dropdown"
                     aria-labelledby="navbarDropdownMenuLink">
                     <button className="lanBtn" onClick={toggleDropdown}>
-                      <LuLanguages />
+                      <LuLanguages />▼
                     </button>
                     <div className="dropdown-content" id="myDropdown">
                       <div
