@@ -27,39 +27,39 @@ export default function Services() {
           <h1 className="ServicesTitle">{t("Services-h")}</h1>
           <p className="ServicesTitle">{t("Services-p")}</p>
           <div className="CaRd">
-            <div className="serv1 shadow  p-3 top">
+            <div className="serv1 shadow   top">
               {card[0]}
               <h4>{t("Services-card1T")}</h4>
             </div>
-            <div className="serv2 shadow p-3 top">
+            <div className="serv2 shadow  top">
               {card[1]}
               <h4>{t("Services-card2T")}</h4>
             </div>
-            <div className="serv3 shadow p-3 top">
+            <div className="serv3 shadow  top">
               {card[2]}
               <h4>{t("Services-card3T")}</h4>
             </div>
-            <div className="serv4 shadow p-3 top">
+            <div className="serv4 shadow  top">
               {card[3]}
               <h4>{t("Services-card4T")}</h4>
             </div>
-            <div className="serv5 shadow p-3 top justify-content-center">
+            <div className="serv5 shadow  top justify-content-center">
               {card[4]}
               <h4>{t("Services-card5T")}</h4>
             </div>
-            <div className="serv6 shadow p-3 top">
+            <div className="serv6 shadow  top">
               {card[5]}
               <h4>{t("Services-card6T")}</h4>
             </div>
-            <div className="serv7 shadow  p-3 top">
+            <div className="serv7 shadow   top">
               {card[6]}
               <h4>{t("Services-card7T")}</h4>
             </div>
-            <div className="serv8 shadow p-3 top">
+            <div className="serv8 shadow  top">
               {card[7]}
               <h4>{t("Services-card8T")}</h4>
             </div>
-            <div className="serv9 shadow p-3 top">
+            <div className="serv9 shadow  top">
               {card[8]}
               <h4>{t("Services-card9T")}</h4>
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
               {card[9]}
               <h4>{t("Services-card10T")}</h4>
             </div>
-            <div className="serv11 shadow p-3 top justify-content-center">
+            <div className="serv11 shadow  top justify-content-center">
               {card[10]}
               <h4>{t("Services-card11T")}</h4>
             </div>
