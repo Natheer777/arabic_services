@@ -23,7 +23,7 @@ justify-content: center;
 
 .navbar ul li a{
   color: var(--color--red);
-  font-size: 20px;
+  font-size: 22px;
   align-items: center;
   display: flex;
 }
@@ -66,13 +66,13 @@ left: 0;
 }
 .title h1 {
   font-weight: bold;
-  font-size: 6vh;
+  font-size: 2rem;
   margin: 0;
 }
-.title h4 {
-  font-size: 3vh;
-  font-weight: bold;
+.title h1[lang="ar"]{
+  font-size: 2.2rem;
 }
+
 .title ul {
   padding: 0;
   margin: 0;
@@ -86,7 +86,47 @@ left: 0;
   justify-content: space-between;
 }
 .diffrint{
+  font-size: 1.2rem;
   padding: 1.5vh;
   color: #b38628;
   border-radius: 50px;
+}
+.diffrint[lang="ar"]{
+  font-size: 1.5rem;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+.lanBtn{
+  border: none;
+  background-color: transparent;
 }

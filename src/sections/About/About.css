@@ -2,20 +2,19 @@
     margin-top: 6vh;
   }
   .about-title {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--color--green);
   }
-  .about-title svg{
+  /* .about-title svg{
     font-size: 30px;
-  }
+  } */
   .about-details {
     margin-top: 20px;
     line-height: 2.5;
     font-weight: 500;
     font-size: 20px;
-    display: flex;
-    justify-content: start;
+    display: inline-block;
   }
   .about-img {
     width: 100%;
@@ -24,3 +23,8 @@
   }
   
   
+  .text-container{
+    width: 100%; 
+    white-space: normal; 
+    overflow: hidden; 
+  }

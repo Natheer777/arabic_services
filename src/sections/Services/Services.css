@@ -1,34 +1,13 @@
-.imgServices img{
-    width: 100%;
-    border-radius: 10px;
-}
-.cardDetails h3{
-font-size: 16px;
-line-height: 2;
-font-weight: 600;
-margin-top: 10px;
-color: var(--color--green);
-display: flex;
-justify-content: start;
-}
 
-.cardServices{
-    margin: auto;
-    width: 28%;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 26.5rem;
-    margin-top: 30px;
 
-}
+
+
 
 .rowServices{
     gap: 20px;
     column-gap: 10px;
 }
-@media screen and (min-width:500px) and (max-width:990px){
+/* @media screen and (min-width:500px) and (max-width:990px){
     .cardServices{
         width: 40%;
     }
@@ -41,20 +20,63 @@ justify-content: start;
     .cardDetails h3{
         margin-top: 15px;
     }
-}
+} */
 .ServicesTitle{
-    text-align: center;
+    /* text-align: center; */
     color: var(--color--green);
     margin-top: 20px;
-    font-size: 45px;
+    font-size: 2rem;
 }
 
-.ServicesTitle svg{
-    font-size: 30px;
-}
+
 .rowServices p{
     font-size: 20px;
     color: black;
     opacity: 0.8;
     line-height: 2;
 }
+
+  /* .MainTitle h2 svg{
+    font-size: 30px;
+  } */
+  
+  /* Styling for the .CaRd container */
+  .CaRd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Styling for h4 elements inside .CaRd */
+  .CaRd h4 {
+    line-height: 2;
+    font-size: 18px;
+    color: var(--color--green);
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  /* Common styling for serv1 to serv12 classes */
+  .serv1,
+  .serv2,
+  .serv3,
+  .serv4,
+  .serv5,
+  .serv6,
+  .serv7,
+  .serv8,
+  .serv9,
+  .serv10,
+  .serv11{
+    line-height: 2;
+    max-width: 20rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  

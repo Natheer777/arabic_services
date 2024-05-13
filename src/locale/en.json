@@ -7,11 +7,9 @@
     "Header-h": "Arabic Services Center (ASC)",
     "Header-p": "Connecting East to West by our Language",
     "Main" : "`SAWA` means `TOGETHER` in Arabic, and we strive to be “with you” through our services to you.",
-
-
-    "About-h": "About us",
-    "About-p": "We are a team of teachers of Arabic and Japanese languages, with long and rich experience in teaching Arabic and Japanese languages in different educational institutions and for age groups with different language levels. We have more than fifteen years of experience in the field of translation and interpreting, audio recording and narration, proofreading texts, scientific and literary research, and other works and activities related to the Arabic and Japanese languages.",
-    "Vision-p": "Japanese culture is considered one of the cultures spread globally and widely, thanks to Japanese animation (anime), in addition to the various Japanese companies that export their products to many countries of the world, including Arab countries. But on the contrary, the interest in the Japanese language is limited to a small group of people in the Arab countries, and even this interest is almost non-existent in some of them. This is due to Japan's geographical distance from the Arab countries first, and to the great cultural and religious difference between the Arab countries and Japan second. We at the `Arabic Language Services Center` aim to bring Japan, its culture and language closer than ever before to the Arab world, by providing various types of services that help in that, starting with translation services from the Japanese language into Arabic and English and vice versa, passing through By offering courses to study the Japanese language remotely (online), by Japanese professors who are fluent in the Arabic language, and ending with providing all kinds of consultations related to Japan and in various cultural, legal, commercial and other fields.",
+    "About-h": "About us ?",
+    "About-p": "　We are a team of teachers of Arabic and Japanese languages, with long and rich experience in teaching Arabic and Japanese languages in different educational institutions and for age groups with different language levels. We have more than fifteen years of experience in the field of translation and interpreting, audio recording and narration, proofreading texts, scientific and literary research, and other works and activities related to the Arabic and Japanese languages.",
+    "Vision-p": "　Japanese culture is considered one of the cultures spread globally and widely, thanks to Japanese animation (anime), in addition to the various Japanese companies that export their products to many countries of the world, including Arab countries. But on the contrary, the interest in the Japanese language is limited to a small group of people in the Arab countries, and even this interest is almost non-existent in some of them. This is due to Japan's geographical distance from the Arab countries first, and to the great cultural and religious difference between the Arab countries and Japan second. We at the `Arabic Language Services Center` aim to bring Japan, its culture and language closer than ever before to the Arab world, by providing various types of services that help in that, starting with translation services from the Japanese language into Arabic and English and vice versa, passing through By offering courses to study the Japanese language remotely (online), by Japanese professors who are fluent in the Arabic language, and ending with providing all kinds of consultations related to Japan and in various cultural, legal, commercial and other fields.",
     "Slogan-card1":"تفريغ المقاطع الصوتية",
     "Slogan-card2":"امتحان اتقان اللغة العربية",
     "Slogan-card3":"تدقيق النصوص و الابحاث",
@@ -22,7 +20,7 @@
     "Slogan-card8":"الترجمة الكتابية التحريرية",
     "Slogan-card9":"تدقيق النصوص المترجمة",
     "Slogan-card10":"قراءة و تسجيل المقاطع الصوتية",
-    "Services-h": "Our services",
+    "Services-h": "Our services :",
     "Services-p":"The Arabic Service Center (ASC) aims to provide various types of services related to the Arabic and Japanese language. Our main services are as follows.",
     "Services-card1T": " Translation from Arabic to other languages and vice versa.",
     "Services-card2T": "Consecutive and simultaneous interpretation from Arabic to Japanese and English and vice versa.",
@@ -46,7 +44,6 @@
     "Phone-form" : "Phone Number",
     "Textarea-form" : "Message Content",
     "File-form" : "Select File",
-    "Send-form" : "Send"
-    
-    
+    "Send-form" : "Send",
+    "desktop" : "Desktop view"    
 }

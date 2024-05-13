@@ -5,10 +5,10 @@ export default function Home() {
     <Navbar />
     <Header />
     <About />
-    <Slogan />
+    {/* <Slogan /> */}
     <Vision />
     <Services />
-    <Slogan2 />
+    {/* <Slogan2 /> */}
     <Contact />
     <Footer />
     </>

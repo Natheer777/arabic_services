@@ -1,6 +1,6 @@
 import "./About.css"
 import AboutImg from '../../assets/edite/واجهة-6.webp'
-import { IoPerson } from "react-icons/io5";
+// import { IoPerson } from "react-icons/io5";
 
 
 import {useTranslation} from 'react-i18next'
@@ -10,8 +10,8 @@ export default function About() {
     <>
     <div className="container mt-5" id="about">
       <div className="row">
-        <div>
-          <h2 className="about-title text-center right">{t("About-h")}<IoPerson /></h2>
+        <div className="text-container">
+          <h2 className="about-title  right">{t("About-h")}</h2>
           <p className="about-details right">{t("About-p")}</p>           
        
         </div>
