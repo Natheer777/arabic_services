@@ -10,6 +10,7 @@ import cookies from "js-cookie";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLine } from "react-icons/fa";
+import Logo from './assets/Logo/لوغو-لغة-1جديد-01.webp'
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 const languages = [
   {
@@ -46,20 +47,12 @@ function App() {
         });
       });
 
-      const leftElements = document.querySelectorAll(".left");
-      const rightElements = document.querySelectorAll(".right");
-      const hiddenElements = document.querySelectorAll(".hidden");
-      const topElements = document.querySelectorAll(".top");
-      leftElements.forEach((el) => observer.observe(el));
-      rightElements.forEach((el) => observer.observe(el));
-      hiddenElements.forEach((el) => observer.observe(el));
-      topElements.forEach((el) => observer.observe(el));
+      const elements = document.querySelectorAll(".left , .right , .hidden , .top")
+  
+      elements.forEach((el)=>{observer.observe(el)})
 
       return () => {
-        leftElements.forEach((el) => observer.unobserve(el));
-        rightElements.forEach((el) => observer.unobserve(el));
-        hiddenElements.forEach((el) => observer.unobserve(el));
-        topElements.forEach((el) => observer.unobserve(el));
+        elements.forEach((el) =>{observer.unobserve(el)})
       };
     });
   }, []);
@@ -96,13 +89,24 @@ const [showIcons, setShowIcons] = useState(false);
 const toggleIcons = () => {
   setShowIcons(!showIcons);
 };
+const hideIcon = () =>{
+  setShowIcons(false)
+}
 
+////////////////////////////
+const [loading, setLoading] = useState(false);
 
+useEffect(() => {
+  setLoading(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 100);
+}, []);
   return (
     <>
    
       <div className="social">
-        <ul onClick={toggleIcons} style={{ cursor: "pointer" }}>
+        <ul onMouseEnter={toggleIcons} onMouseLeave={hideIcon} style={{ cursor: "pointer" }}>
           <li className="click">
             <IoChatbubbleEllipsesOutline />
           </li>
@@ -127,9 +131,9 @@ const toggleIcons = () => {
           )}
         </ul>
       </div>
-      {/* {loading ? (
+      {loading ? (
         <img className="Loading" src={Logo} alt="" />
-      ) : ( */}
+      ) : (
         <>
           <Router>
             <Routes>
@@ -137,7 +141,7 @@ const toggleIcons = () => {
             </Routes>
           </Router>
         </>
-      {/* )} */}
+       )} 
     </>
   );
 }

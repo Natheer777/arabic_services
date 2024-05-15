@@ -1,62 +1,60 @@
-.navbar-brand img{
-  width: 18vh;
+/* Navbar styles */
+.navbar-brand img {
+  width: 20vh;
 }
-.container-fluid{
+.container-fluid {
   background-color: white;
   z-index: 10;
   flex-direction: row-reverse;
 }
-.navbar-toggler{
+.navbar-toggler {
   width: 100%;
   margin-top: 10px;
 }
-.navbar-collapse{
-justify-content: center;
+.navbar-collapse {
+  justify-content: center;
 }
-.navbar-nav{
+.navbar-nav {
   gap: 15px;
 }
-.navbar{
+.navbar {
   background-color: white;
   padding: 0;
 }
-
-.navbar ul li a{
+.navbar ul li a {
   color: var(--color--red);
   font-size: 22px;
   align-items: center;
   display: flex;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: var(--color--green);
 }
-.navbar ul li a svg{
+.navbar ul li a svg {
   margin-right: 10px;
   margin-left: 10px;
   color: var(--color--green);
 }
-.item1{
+.item1 {
   transition-delay: 100ms;
 }
-.item2{
+.item2 {
   transition-delay: 200ms;
 }
-.item3{
+.item3 {
   transition-delay: 300ms;
 }
-.item4{
+.item4 {
   transition-delay: 400ms;
 }
-.item5{
+.item5 {
   transition-delay: 500ms;
 }
-
-
-.dropdown-menu[data-bs-popper]{
-left: 0;
+.dropdown-menu[data-bs-popper] {
+  left: 0;
 }
 
-
+/* Title styles */
 .title {
   padding-top: 15px;
   width: 100%;
@@ -69,10 +67,9 @@ left: 0;
   font-size: 2rem;
   margin: 0;
 }
-.title h1[lang="ar"]{
+.title h1[lang="ar"] {
   font-size: 2.2rem;
 }
-
 .title ul {
   padding: 0;
   margin: 0;
@@ -85,54 +82,54 @@ left: 0;
   display: flex;
   justify-content: space-between;
 }
-.diffrint{
-  color:#c39010;
+.diffrint {
+  flex-direction: row-reverse;
+  color: #c39010;
   border-radius: 50px;
-  margin-top: 22px;
+  margin-top: 18px;
   font-size: 1.2rem;
-  padding-bottom: 10px;
+  padding-left: 40px;
 }
-.diffrint[lang="ar"]{
+.diffrint[lang="ar"] {
   font-size: 1.5rem;
 }
 
-
+/* Dropdown styles */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
-
 .dropdown-content {
-  display: none;
+  display: none; /* Ensure it's hidden by default */
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 10;
   margin-top: 8px;
+  z-index: 1; /* Ensure it's above other elements */
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   display: block;
   text-decoration: none;
 }
-
 .dropdown-content a:hover {
   background-color: #f1f1f1;
   border-radius: 10px;
 }
-
-.dropdown.active .dropdown-content {
-  display: block;
+.dropdown:hover .dropdown-content {
+  display: block; /* Show on hover */
 }
-.lanBtn{
+.lanBtn {
+  margin-top: 8px;
   font-size: 12px;
   border: none;
   background-color: transparent;
 }
-.dropdown-toggle::after{
+.lanBtn svg {
+  color: var(--color--green);
+}
+.dropdown-toggle::after {
   display: none;
 }

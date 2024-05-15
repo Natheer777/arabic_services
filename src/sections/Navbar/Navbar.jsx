@@ -6,29 +6,29 @@ import { IoPerson } from "react-icons/io5";
 import { GrServices } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
-import { useEffect } from "react";
+import { useEffect , useRef } from "react";
+import i18n from 'i18next'
 export default function Navbar() {
-  const [t, i18n] = useTranslation();
+  const [t] = useTranslation();
+  const dropdownRef = useRef(null);
 
-  
+  const showDropdown = () => {
+    if (dropdownRef.current) {
+      dropdownRef.current.style.display = 'block';
+    }
+  };
 
-  const toggleDropdown = () => {
-    const dropdownContent = document.querySelector(".dropdown-content");
-    const isVisible =
-      window.getComputedStyle(dropdownContent).display !== "none";
-
-    if (isVisible) {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
+  const hideDropdown = () => {
+    if (dropdownRef.current) {
+      dropdownRef.current.style.display = 'none';
     }
   };
 
   useEffect(() => {
-    const dropdownContent = document.querySelector(".dropdown-content");
-
     const handleLanguageChange = () => {
-      dropdownContent.style.display = "none"; // إغلاق القائمة عند تغيير اللغة
+      if (dropdownRef.current) {
+        dropdownRef.current.style.display = "none";
+      }
     };
 
     i18n.on("languageChanged", handleLanguageChange);
@@ -47,9 +47,8 @@ export default function Navbar() {
                 {t("Header-h")}
               </h1>
             </li>
-            <li className="diffrint" lang={i18n.language}>
-            {t("Header-p")}
-
+            <li className="diffrint flex-fill bd-highlight left" lang={i18n.language}>
+              {t("Header-p")}
             </li>
             <li>
               <a className="navbar-brand" href="#">
@@ -59,10 +58,10 @@ export default function Navbar() {
           </ul>
           {/* <p className="diffrint mt-3" lang={i18n.language}>
             {/* <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}> */}
-            {/* <h4 className={i18n.language === 'ar' ? 'left' : 'right'}> */}
-            {/* {t("Header-p")} */}
-            {/* </h4> */}
-            {/* </marquee> */}
+          {/* <h4 className={i18n.language === 'ar' ? 'left' : 'right'}> */}
+          {/* {t("Header-p")} */}
+          {/* </h4> */}
+          {/* </marquee> */}
           {/* </p> */}
         </div>
         <nav className="navbar navbar-expand-lg navbar-light mb-3">
@@ -102,58 +101,54 @@ export default function Navbar() {
                     <FaPhoneAlt /> {t("Navbar-contact")}
                   </a>
                 </li>
-                <li className="nav-item dropdown item5 hidden">
-                <a
-                    className="nav-link dropdown-toggle fs-5"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                  <div  className="dropdown"
-                    aria-labelledby="navbarDropdownMenuLink">
-                    <button className="lanBtn" onClick={toggleDropdown}>
-                      <LuLanguages />▼
-                    </button>
-                    <div className="dropdown-content" id="myDropdown">
-                      <div
-                        className=""
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                        <a
-                          onClick={() => {
-                            i18n.changeLanguage("ja");
-                            
-                          }}
-                          className="dropdown-item"
-                          // href="#"
-                        >
-                          日本語
-                        </a>
-                        <a
-                          onClick={() => {
-                            i18n.changeLanguage("en");
-                          }}
-                          className="dropdown-item"
-                          // href="#"
-                        >
-                          English
-                        </a>
-                        <a
-                          onClick={() => {
-                            i18n.changeLanguage("ar");
-                          }}
-                          className="dropdown-item"
-                          // href="#"
-                        >
-                          العربية
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                <li
+              className="nav-item dropdown item5 hidden nav-link dropdown-toggle fs-5 "
+              id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div
+                className="dropdown lanBtn"
+                onMouseEnter={showDropdown}
+                onMouseLeave={hideDropdown}
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+            
+                  <LuLanguages /> ▼
+               
+                <div
+                  className="dropdown-content"
+                  ref={dropdownRef}
+                  style={{ display: "none" }}
+                >
+                  <a
+                    onClick={() => {
+                      i18n.changeLanguage("ja");
+                    }}
+                    className="dropdown-item"
+                    >
+                    日本語
                   </a>
-                </li>
+                  <a
+                    onClick={() => {
+                      i18n.changeLanguage("en");
+                    }}
+                    className="dropdown-item"
+                  >
+                    English
+                  </a>
+                  <a
+                    onClick={() => {
+                      i18n.changeLanguage("ar");
+                    }}
+                    className="dropdown-item"
+                  >
+                    العربية
+                  </a>
+                </div>
+              </div>
+            </li>
               </ul>
             </div>
           </div>
