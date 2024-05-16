@@ -1,6 +1,6 @@
 /* Navbar styles */
 .navbar-brand img {
-  width: 20vh;
+  width: 10rem;
 }
 .container-fluid {
   background-color: white;
@@ -133,3 +133,19 @@
 .dropdown-toggle::after {
   display: none;
 }
+@media screen and (min-width:5px) and (max-width:600px){
+  .title ul{
+    position: relative;
+  }
+    .title ul li{
+      height:9.5rem;
+    }
+    .diffrint{
+      justify-content: center !important;
+      margin-bottom: 21px;
+      align-items: end;
+      position: absolute;
+      width: 100%;
+  }
+    }
+  

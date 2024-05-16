@@ -11,10 +11,10 @@
     box-sizing: border-box;
   }
    .Loading {
-    width: 6vh;
+    width: 15vh;
     position: absolute;
     top: 50%;
-    left: 45.5%;
+    left: calc(100% - 59%);
     transform: translate(-50%, -50%);
     animation-name: Loading;
     animation-duration: 3s;
@@ -63,7 +63,7 @@
   } 
   ::-webkit-scrollbar {
     width: 8px;
-    /* height: 0px; */
+    height: 0px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: var(--color--green);
@@ -74,9 +74,10 @@
   } */
   
   .social {
+    display: none;
     z-index: 10;
     position: fixed;
-    bottom: 8vh;
+    bottom: 15vh;
     right: 14px;
     border: none;
     color: white;

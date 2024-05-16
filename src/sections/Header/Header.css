@@ -48,7 +48,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100% !important;
-  height: 82vh;
+  height: 32rem;
 }
 
 
@@ -88,17 +88,15 @@
 .img9,
 .img10,
 .img11{
-   height: 28vh;
+   height: 23rem;
   }
   .navbar-brand img{
     width: 9vh;
   }
   .title h1{
-    font-size: 2.3vh;
+    font-size: 1.8rem;
   }
-  .title h4{
-    font-size: 1.5vh;
-  }
+
  }
  
  @media screen and (min-width:665px) and (max-width:860px ){
@@ -113,14 +111,12 @@
 .img9,
 .img10,
 .img11{
-   height: 54vh;
+   height: 21rem;
   }
   .title h1{
-   font-size: 5vh;
+   font-size: 1.8rem;
   }
-  .title h4{
-   font-size: 3vh;
-  }
+
  }
  @media screen and (min-width:540px) and (max-width:665px ){
    .img1,
@@ -134,14 +130,12 @@
    .img9,
    .img10,
    .img11{
-    height: 40vh;
+    height: 14rem;
    }
    .title h1 {
      font-size: 4vh;
  }
- .title h4 {
-     font-size: 2.8vh;
- }
+
  }
  @media screen and (min-width:476px) and (max-width:540px ){
    .img1,
@@ -155,17 +149,17 @@
    .img9,
    .img10,
    .img11{
-    height: 35vh;
+    height: 12rem;
    } 
    .navbar-brand img{
     width: 12vh;
    }
    .title h1 {
-     font-size: 4vh;
+    margin-top: 1.2rem;
+
+     font-size: 1.8rem;
  }
- .title h4 {
-     font-size: 2.8vh;
- }
+
  }
  
  @media screen and (min-width:400px) and (max-width:476px ){
@@ -186,12 +180,10 @@
       width: 12vh;
     }
    .title h1 {
-     font-size: 4vh;
+    margin-top: 1.2rem;
+     font-size: 1.8rem;
  }
- .title h4 {
-     font-size: 2.5vh;
- }
- 
+
  }
  @media screen and (min-width:5px) and (max-width:400px ){
   .img1,
@@ -205,18 +197,16 @@
   .img9,
   .img10,
   .img11{
-    height: 22vh;
+    height: 10rem;
    } 
  
  .navbar-brand img{
-   width: 9vh;
+   width: 7rem;
  }
   
    .title h1 {
-       font-size: 3vh;
-   }
-   .title h4 {
-       font-size: 2.5vh;
+    margin-top: 1.2rem;
+       font-size: 1.5rem;
    }
  }
  

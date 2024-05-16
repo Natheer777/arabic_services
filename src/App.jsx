@@ -100,12 +100,16 @@ useEffect(() => {
   setLoading(true);
   setTimeout(() => {
     setLoading(false);
-  }, 100);
+  }, 4000);
 }, []);
+////
+setTimeout(() => {
+  document.querySelector(".social").style.display = "block";
+}, 5000);
   return (
     <>
    
-      <div className="social">
+      <div className="social hidden">
         <ul onMouseEnter={toggleIcons} onMouseLeave={hideIcon} style={{ cursor: "pointer" }}>
           <li className="click">
             <IoChatbubbleEllipsesOutline />

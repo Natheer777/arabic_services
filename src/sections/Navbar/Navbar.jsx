@@ -56,13 +56,6 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-          {/* <p className="diffrint mt-3" lang={i18n.language}>
-            {/* <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}> */}
-          {/* <h4 className={i18n.language === 'ar' ? 'left' : 'right'}> */}
-          {/* {t("Header-p")} */}
-          {/* </h4> */}
-          {/* </marquee> */}
-          {/* </p> */}
         </div>
         <nav className="navbar navbar-expand-lg navbar-light mb-3">
           <div className="container-fluid">
@@ -102,14 +95,14 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li
-              className="nav-item dropdown item5 hidden nav-link dropdown-toggle fs-5 "
+              className="nav-item dropdown  nav-link dropdown-toggle fs-5 "
               id="navbarDropdownMenuLink"
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
               <div
-                className="dropdown lanBtn"
+                className="dropdown lanBtn item5 hidden"
                 onMouseEnter={showDropdown}
                 onMouseLeave={hideDropdown}
                 aria-labelledby="navbarDropdownMenuLink"
