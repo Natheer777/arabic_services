@@ -1,17 +1,11 @@
-/* .vision-title svg{
-    font-size: 30px;
-} */
+
 .vision-details{
-    /* margin-top: 20px; */
     line-height: 2;
     font-weight: 500;
     font-size: 20px;
     display: inline-block;
 }
-/* .vision-img{
-    width: 100%;
-    margin-top: 10vh;
-} */
+
 .text-container{
     width: 100%; 
     white-space: normal; 

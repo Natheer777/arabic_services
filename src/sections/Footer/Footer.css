@@ -24,13 +24,11 @@
 }
 .footer ul li {
   margin-bottom: 10px;
-/* opacity: 0.8; */
 }
 
 .logo_white {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 6vh; */
 }
 .logo_white img {
   width: 10vh;

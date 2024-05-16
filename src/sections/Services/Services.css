@@ -2,22 +2,8 @@
   gap: 20px;
   column-gap: 10px;
 }
-/* @media screen and (min-width:500px) and (max-width:990px){
-    .cardServices{
-        width: 40%;
-    }
-}
-@media screen and (min-width:5px) and (max-width:550px){
-    .cardServices{
-        width: 80%;
-        margin-top: 15px;
-    }
-    .cardDetails h3{
-        margin-top: 15px;
-    }
-} */
+
 .ServicesTitle {
-  /* text-align: center; */
   color: var(--color--green);
   margin-top: 20px;
   font-size: 2rem;
@@ -30,11 +16,8 @@
   line-height: 2;
 }
 
-/* .MainTitle h2 svg{
-    font-size: 30px;
-  } */
 
-/* Styling for the .CaRd container */
+
 .CaRd {
   display: flex;
   flex-wrap: wrap;
@@ -42,17 +25,14 @@
   justify-content: space-between;
 }
 
-/* Styling for h4 elements inside .CaRd */
 .CaRd h4 {
   line-height: 2;
   font-size: 20px;
   color: black;
-  /* font-weight: bold; */
   text-align: center;
   padding: 5px;
 }
 
-/* Common styling for serv1 to serv12 classes */
 .serv1,
 .serv2,
 .serv3,
@@ -67,5 +47,4 @@
   max-width: 20rem;
   border-radius: 10px;
   margin:0 auto !important;
-  /* height: max-content; */
 }

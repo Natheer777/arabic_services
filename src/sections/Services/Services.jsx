@@ -1,15 +1,5 @@
 import "./Services.css";
-// import img1 from '../../assets/Srvices/الترجمة الكتابية ( التحريرية).webp'
-// import img2 from '../../assets/Srvices/ترجمة شفوية ٢.webp'
-// import img3 from '../../assets/Srvices/ترجمة شفوية ٢.webp'
-// import img4 from '../../assets/Srvices/تدقيق النصوص المترجمة.webp'
-// import img5 from '../../assets/Srvices/تسجيل المقاطع الصوتية_.webp'
-// import img6 from '../../assets/Srvices/تفريغ الاصوات_.webp'
-// import img7 from '../../assets/Srvices/تعليم اللغة العربية_.webp'
-// import img8 from '../../assets/Srvices/تدقيق الابحاث_.webp'
-// import img9 from '../../assets/Srvices/الاستشارات الدراسية.webp'
-// import img10 from '../../assets/Srvices/تدقيق النصوص المترجمة.webp'
-// import img11 from '../../assets/Srvices/تفريغ الاصوات 3.webp'
+
 import { useTranslation } from "react-i18next";
 import { Card_Services } from "../../components/index";
 import Data from "../../Data/ServicesCard";

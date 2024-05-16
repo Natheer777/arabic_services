@@ -3,12 +3,9 @@
   }
   .about-title {
     font-size: 2rem;
-    /* font-weight: bold; */
     color: var(--color--green);
   }
-  /* .about-title svg{
-    font-size: 30px;
-  } */
+
   .about-details {
     margin-top: 20px;
     line-height: 2.5;

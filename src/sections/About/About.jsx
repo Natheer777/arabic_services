@@ -1,6 +1,5 @@
 import "./About.css"
 import AboutImg from '../../assets/edite/واجهة-6.webp'
-// import { IoPerson } from "react-icons/io5";
 
 
 import {useTranslation} from 'react-i18next'

@@ -11,7 +11,6 @@ const DesktopViewButton = () => {
     if (userAgent.match(/(iphone|ipod|ipad|android)/)) {
       const viewport = document.querySelector("meta[name=viewport]");
       viewport.setAttribute('content', 'width=1256');
-      // window.location.reload();
     }
     setDesktopView(true);
   };

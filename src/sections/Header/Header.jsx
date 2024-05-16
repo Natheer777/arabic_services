@@ -4,29 +4,23 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
-import "swiper/css"; // Import Swiper core styles
+import "swiper/css"; 
 
 import "./Header.css";
 
 export default function Header() {
-  // Uncomment if using translation
-  // const [t] = useTranslation();
   const swiperRef = useRef(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      // التحقق مما إذا كانت swiperRef.current موجودة وليست فارغة
       if (swiperRef.current && swiperRef.current.swiper) {
-        // الحصول على زر التالي من swiperRef.current.swiper
         const nextButton = swiperRef.current.swiper.navigation.nextEl;
         if (nextButton) {
-          // نقوم بتشغيل النقر على زر التالي
           nextButton.click();
         }
       }
     }, 5000);
 
-    // تنظيف مؤقت الفاصل
     return () => clearInterval(intervalId);
   }, []);
   return (
@@ -37,7 +31,7 @@ export default function Header() {
           dir="ltr"
           spaceBetween={30}
           effect={"fade"}
-          autoplay={{ delay: 10000 }} // Set autoplay directly here
+          autoplay={{ delay: 10000 }} 
           navigation={true}
           loop={true}
           pagination={{ clickable: true }}

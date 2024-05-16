@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './Contact.css';
 import { useTranslation } from 'react-i18next';
-import { FaFolderPlus, FaTrash } from 'react-icons/fa'; // استيراد رمز FaTrash لزر الحذف
+import { FaFolderPlus, FaTrash } from 'react-icons/fa'; 
 
-// import Caontact from '../../assets/Services/اتصل بنا.webp';
 
 export default function Contact() {
   const [t] = useTranslation();
@@ -15,14 +14,12 @@ export default function Contact() {
   };
 
   const handleFileDelete = () => {
-    setAttachedFile(null); // حذف الملف المُرفق عند النقر على زر الحذف
+    setAttachedFile(null); 
   };
 
   return (
     <div className="container mb-5 mt-5">
-      {/* <div className="Contact">
-        <img src={Caontact} alt="" />
-      </div> */}
+ 
 
       <form method="POST" action="https://formsubmit.co/contact@arabicsc.com" encType="multipart/form-data" id="Contact">
         <label>{t('Name-form')}</label>
