@@ -9,12 +9,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
   }
    .Loading {
     width: 15vh;
     position: absolute;
     top: 50%;
-    left: calc(100% - 59%);
+    left: calc(100% - 55%);
     transform: translate(-50%, -50%);
     animation-name: Loading;
     animation-duration: 3s;

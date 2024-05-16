@@ -12,13 +12,13 @@ export default function Footer() {
     const [t] = useTranslation()
   return (
     <>
-      <footer className="footer">
+     <footer className="footer">
         <MDBFooter
           bgColor="bg-secondary"
           className="text-white text-center text-lg-left"
         >
           <MDBContainer className="p-4">
-            <MDBRow className="rowFooter">
+            <MDBRow className="rowFooter" >
               <MDBCol lg="3" md="4">
                 <div className="text-uppercase">
                   <img className="Logo_Footer" src={Logo} alt="" />
@@ -37,7 +37,7 @@ export default function Footer() {
                     <FaMobileAlt />
                     {t("Phone")}
                   </li>
-                  <a href="https://wa.link/mr0gya">
+               <a href="https://wa.link/mr0gya">
                     <li>
                       <FaWhatsapp /> {t("Whatsapp")}
                     </li>
@@ -73,17 +73,17 @@ export default function Footer() {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-            <ul className='ULFooter'>
-              <li>   
+            <ul className="Ulfooter">
+              <li>
             <a className="text-white">
-              Copyright © 2022 SAWA GROUP LLC. All Rights Reserved.
+              Copyright © 2022 ARABIC SERVICES CENTER LLC. All Rights Reserved.
             </a></li>
-              <li className='App'>    
+              <li className="App">       
       <DesktopViewButton />
     </li>
             </ul>
-        
-       
+            
+     
           </div>
         </MDBFooter>
       </footer>

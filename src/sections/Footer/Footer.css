@@ -1,83 +1,87 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .Contact img{
-    width: 100%;
-  }
-  .footer{
-      background-color: rgba(0, 0, 0, 0.819);
-  }
-  .container {
-    max-width: 1170px;
-    margin: auto;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul {
-    list-style: none;
-  }
-  .footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  .logo_white {
-    display: flex;
-    justify-content: center;
-  }
-  .logo_white img {
-    width: 10vh;
-  }
-  .Logo_Footer {
-    width: 10rem;
-  }
-  
-  .adress {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  
-  svg{
-    font-size: 20px;
-  }
-  a{
-    text-decoration: none;
-    color:#8ff4b3;
-  }
-  .ULFooter{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-.DesktopView{
-  position: relative;
-  background-color: var(--color--green);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.DesktopView h5{
-  font-size: 12px;
-  color: white;
-position: absolute;
-left: 50%;
-top: 42%;
-transform: translate(-50%,-50%);
+.Contact img{
+  width: 100%;
 }
-.DesktopView svg{
-  color: white;
-  font-size: 2rem;
+.footer{
+    background-color: rgba(0, 0, 0, 0.819);
 }
-  .App button{
-  border: none;
-  padding: 10px 12px 10px 12px;
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
   display: flex;
-  justify-content: space-between;
-  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.footer ul{
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 10px;
+/* opacity: 0.8; */
+}
+
+.logo_white {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 6vh; */
+}
+.logo_white img {
+  width: 10vh;
+}
+.Logo_Footer {
+  width: 10rem;
+}
+
+.adress {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+svg{
+  font-size: 20px;
+}
+a{
+text-decoration: none;
+  color:rgb(204, 252, 185);
+}
+.Ulfooter{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .DesktopView{
+    position: relative;
+    background-color: var(--color--green);
+  }
+  .DesktopView h5{
+    font-size: 12px;
+    color: white;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%,-50%);
+  }
+  .DesktopView svg{
+    color: white;
+    font-size: 2rem;
+  }
+  .App button{
+    border: none;
+    padding: 10px 12px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
   }
   .rowFooter{
     flex-direction: row-reverse;
