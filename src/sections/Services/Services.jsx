@@ -27,10 +27,10 @@ export default function Services() {
               {card[1]}
               <h4 lang={i18n.language}>{t("Services-card2T")}</h4>
             </div>
-            <div className="serv3 shadow  top">
-              {/* {card[2]} */} <MdQuestionMark />
+            {/* <div className="serv3 shadow  top">
+              {card[2]} 
               <h4 lang={i18n.language}>{t("Services-card3T")}</h4>
-            </div>
+            </div> */}
             <div className="serv4 shadow  top">
               {card[3]}
               <h4 lang={i18n.language}>{t("Services-card4T")}</h4>
@@ -43,10 +43,10 @@ export default function Services() {
               {card[5]}
               <h4 lang={i18n.language}>{t("Services-card6T")}</h4>
             </div>
-            <div className="serv7 shadow   top">
-              {/* {card[6]} */} <MdQuestionMark />
+            {/* <div className="serv7 shadow   top">
+               {card[6]} 
               <h4 lang={i18n.language}>{t("Services-card7T")}</h4>
-            </div>
+            </div> */}
             <div className="serv8 shadow  top">
               {card[7]}
               <h4 lang={i18n.language}>{t("Services-card8T")}</h4>
@@ -55,14 +55,14 @@ export default function Services() {
               {/* {card[8]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card9T")}</h4>
             </div>
-            <div className="serv10 shadow p-9 top">
-              {/* {card[9]} */} <MdQuestionMark />
+            {/* <div className="serv10 shadow p-9 top">
+               {card[9]} 
               <h4 lang={i18n.language}>{t("Services-card10T")}</h4>
-            </div>
-            <div className="serv11 shadow  top justify-content-center">
-              {/* {card[10]} */} <MdQuestionMark />
+            </div> */}
+            {/* <div className="serv11 shadow  top justify-content-center">
+              {card[10]}  
               <h4 lang={i18n.language}>{t("Services-card11T")}</h4>
-            </div>
+            </div> */}
       </div>
       </div>
       </div>
