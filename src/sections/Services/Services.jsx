@@ -3,7 +3,7 @@ import "./Services.css";
 import { useTranslation } from "react-i18next";
 import { Card_Services } from "../../components/index";
 import Data from "../../Data/ServicesCard";
-import { MdQuestionMark } from "react-icons/md";
+// import { MdQuestionMark } from "react-icons/md";
 
 export default function Services() {
   const [t , i18n] = useTranslation();
@@ -51,10 +51,10 @@ export default function Services() {
               {card[7]}
               <h4 lang={i18n.language}>{t("Services-card8T")}</h4>
             </div>
-            <div className="serv9 shadow  top">
-              {/* {card[8]} */} <MdQuestionMark />
+            {/* <div className="serv9 shadow  top">
+               <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card9T")}</h4>
-            </div>
+            </div> */}
             {/* <div className="serv10 shadow p-9 top">
                {card[9]} 
               <h4 lang={i18n.language}>{t("Services-card10T")}</h4>
