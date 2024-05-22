@@ -12,15 +12,25 @@
     list-style: none;
   }
    .Loading {
-    width: 15vh;
+    width: 10vh;
     position: absolute;
     top: 50%;
-    left: calc(100% - 55%);
+    left: 48%;
     transform: translate(-50%, -50%);
     animation-name: Loading;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  div#root{
+    background-image: url("../src/assets/سيش1298523613-1024x1024.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+  @media screen and (min-width:5px) and (max-width:600px){
+    .Loading{
+      left: 40%;
+    }
   }
   @keyframes Loading {
     0% {
@@ -76,7 +86,7 @@
   
   .social {
     display: none;
-    z-index: 10;
+    z-index: 16;
     position: fixed;
     bottom: 15vh;
     right: 14px;

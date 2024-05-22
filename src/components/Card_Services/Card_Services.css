@@ -1,13 +1,17 @@
 .Services_item_img {
     border-radius: 15px;
     margin: auto;
-    width: 100%;
+    width: 70%;
+    background-color: whitesmoke;
     background-position: center;
     background-size: cover;
+    padding: 2vh;
+  }
+  .card_wrapperr{
+    background-color: whitesmoke;
+    border-radius: 10px;
   }
   .Best_Services_item {
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     margin: auto;
     text-align: center;
   }

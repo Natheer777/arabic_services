@@ -10,7 +10,7 @@ const DesktopViewButton = () => {
     const userAgent = navigator.userAgent.toLowerCase();
     if (userAgent.match(/(iphone|ipod|ipad|android)/)) {
       const viewport = document.querySelector("meta[name=viewport]");
-      viewport.setAttribute('content', 'width=1256');
+      viewport.setAttribute('content', 'width=1280');
     }
     setDesktopView(true);
   };

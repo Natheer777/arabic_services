@@ -3,6 +3,8 @@ import "./Services.css";
 import { useTranslation } from "react-i18next";
 import { Card_Services } from "../../components/index";
 import Data from "../../Data/ServicesCard";
+import { MdQuestionMark } from "react-icons/md";
+
 export default function Services() {
   const [t , i18n] = useTranslation();
 
@@ -26,7 +28,7 @@ export default function Services() {
               <h4 lang={i18n.language}>{t("Services-card2T")}</h4>
             </div>
             <div className="serv3 shadow  top">
-              {card[2]}
+              {/* {card[2]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card3T")}</h4>
             </div>
             <div className="serv4 shadow  top">
@@ -42,7 +44,7 @@ export default function Services() {
               <h4 lang={i18n.language}>{t("Services-card6T")}</h4>
             </div>
             <div className="serv7 shadow   top">
-              {card[6]}
+              {/* {card[6]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card7T")}</h4>
             </div>
             <div className="serv8 shadow  top">
@@ -50,15 +52,15 @@ export default function Services() {
               <h4 lang={i18n.language}>{t("Services-card8T")}</h4>
             </div>
             <div className="serv9 shadow  top">
-              {card[8]}
+              {/* {card[8]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card9T")}</h4>
             </div>
             <div className="serv10 shadow p-9 top">
-              {card[9]}
+              {/* {card[9]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card10T")}</h4>
             </div>
             <div className="serv11 shadow  top justify-content-center">
-              {card[10]}
+              {/* {card[10]} */} <MdQuestionMark />
               <h4 lang={i18n.language}>{t("Services-card11T")}</h4>
             </div>
       </div>

@@ -110,7 +110,7 @@ setTimeout(() => {
     <>
    
       <div className="social hidden">
-        <ul onMouseEnter={toggleIcons} onMouseLeave={hideIcon} style={{ cursor: "pointer" }}>
+        <ul onMouseEnter={toggleIcons} onClick={toggleIcons} onMouseLeave={hideIcon} style={{ cursor: "pointer" }}>
           <li className="click">
             <IoChatbubbleEllipsesOutline />
           </li>

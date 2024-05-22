@@ -1,37 +1,33 @@
-.img1{
+.img1 {
   background-image: url("../../assets/edite/واجهة-10.webp");
 }
-.img2{
+.img2 {
   background-image: url("../../assets/edite/واجهة-11.webp");
 }
-.img3{
+.img3 {
   background-image: url("../../assets/edite/واجهة-12.webp");
 }
-.img4{
+.img4 {
   background-image: url("../../assets/edite/واجهة-151.webp");
 }
-.img5{
+.img5 {
   background-image: url("../../assets/edite/واجهة-6.webp");
 }
-.img6{
+.img6 {
   background-image: url("../../assets/edite/واجهة-67.webp");
 }
-.img7{
+.img7 {
   background-image: url("../../assets/edite/واجهة-جديدة-2.webp");
 }
-.img8{
+.img8 {
   background-image: url("../../assets/edite/واجهة-جديدة-3.webp");
 }
-.img9{
+.img9 {
   background-image: url("../../assets/edite/واجهة-جديدة.webp");
 }
-.img10{
+.img10 {
   background-image: url("../../assets/edite/واجهة 4.webp");
 }
-.img11{
-  background-image: url("../../assets/edite/واجهة 8.webp");
-}
-
 
 .img1,
 .img2,
@@ -42,16 +38,13 @@
 .img7,
 .img8,
 .img9,
-.img10,
-.img11{
+.img10 {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100% !important;
   height: 32rem;
 }
-
-
 
 .swiper-button-prev {
   display: none;
@@ -62,130 +55,25 @@
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
   display: none;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
   display: none;
 }
-
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fce875b1;
 }
 
-
-@media screen and (min-width:850px) and (max-width:1030px ){
- 
-  .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7,
-.img8,
-.img9,
-.img10,
-.img11{
-   height: 23rem;
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .title h1 {
+    display: ruby;
   }
-  .navbar-brand img{
-    width: 9vh;
-  }
-  .title h1{
-    font-size: 1.8rem;
-  }
-
- }
- 
- @media screen and (min-width:665px) and (max-width:860px ){
-  .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7,
-.img8,
-.img9,
-.img10,
-.img11{
-   height: 21rem;
-  }
-  .title h1{
-   font-size: 1.8rem;
-  }
-
- }
- @media screen and (min-width:540px) and (max-width:665px ){
-   .img1,
-   .img2,
-   .img3,
-   .img4,
-   .img5,
-   .img6,
-   .img7,
-   .img8,
-   .img9,
-   .img10,
-   .img11{
-    height: 14rem;
-   }
-   .title h1 {
-     font-size: 4vh;
- }
-
- }
- @media screen and (min-width:476px) and (max-width:540px ){
-   .img1,
-   .img2,
-   .img3,
-   .img4,
-   .img5,
-   .img6,
-   .img7,
-   .img8,
-   .img9,
-   .img10,
-   .img11{
-    height: 12rem;
-   } 
-   .navbar-brand img{
-    width: 12vh;
-   }
-   .title h1 {
-    margin-top: 1.2rem;
-
-     font-size: 1.8rem;
- }
-
- }
- 
- @media screen and (min-width:400px) and (max-width:476px ){
-   .img1,
-   .img2,
-   .img3,
-   .img4,
-   .img5,
-   .img6,
-   .img7,
-   .img8,
-   .img9,
-   .img10,
-   .img11{
-    height: 28vh;
-   } 
-    .navbar-brand img{
-      width: 12vh;
-    }
-   .title h1 {
-    margin-top: 1.2rem;
-     font-size: 1.8rem;
- }
-
- }
- @media screen and (min-width:5px) and (max-width:400px ){
+}
+@media screen and (min-width: 850px) and (max-width: 1030px) {
   .img1,
   .img2,
   .img3,
@@ -195,18 +83,117 @@
   .img7,
   .img8,
   .img9,
-  .img10,
-  .img11{
-    height: 10rem;
-   } 
- 
- .navbar-brand img{
-   width: 7rem;
- }
-  
-   .title h1 {
+  .img10 {
+    height: 23rem;
+  }
+  .navbar-brand img {
+    width: 9vh;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 665px) and (max-width: 860px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10 {
+    height: 21rem;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 665px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10 {
+    height: 14rem;
+  }
+  .title h1 {
+    font-size: 4vh;
+  }
+}
+@media screen and (min-width: 476px) and (max-width: 540px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10 {
+    height: 12rem;
+  }
+  .navbar-brand img {
+    width: 12vh;
+  }
+  .title h1 {
     margin-top: 1.2rem;
-       font-size: 1.5rem;
-   }
- }
- 
+
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 476px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10 {
+    height: 28vh;
+  }
+  .navbar-brand img {
+    width: 12vh;
+  }
+  .title h1 {
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 5px) and (max-width: 400px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10 {
+    height: 10rem;
+  }
+
+  .navbar-brand img {
+    width: 7rem;
+  }
+  .title h1[lang="ar"] {
+    margin-top: 0;
+  }
+  .title h1 {
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+}

@@ -2,7 +2,6 @@
   width: 10rem;
 }
 .container-fluid {
-  background-color: white;
   z-index: 10;
   flex-direction: row-reverse;
 }
@@ -17,7 +16,6 @@
   gap: 15px;
 }
 .navbar {
-  background-color: white;
   padding: 0;
 }
 .navbar ul li a {
@@ -53,7 +51,6 @@
   left: 0;
 }
 
-/* Title styles */
 .title {
   padding-top: 15px;
   width: 100%;
@@ -67,7 +64,7 @@
   margin: 0;
 }
 .title h1[lang="ar"] {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 .title ul {
   padding: 0;
@@ -103,7 +100,6 @@
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  margin-top: 8px;
   z-index: 1;
 }
 .dropdown-content a {
@@ -139,6 +135,7 @@
       height:9.5rem;
     }
     .diffrint{
+      padding: 0;
       justify-content: center !important;
       margin-bottom: 21px;
       align-items: end;
@@ -146,4 +143,9 @@
       width: 100%;
   }
     }
-  
+  .Blockk{
+    display: block;
+  }
+  .Nonek{
+    display: none;
+  }

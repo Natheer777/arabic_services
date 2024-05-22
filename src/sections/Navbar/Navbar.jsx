@@ -6,29 +6,27 @@ import { IoPerson } from "react-icons/io5";
 import { GrServices } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
-import { useEffect , useRef } from "react";
-import i18n from 'i18next'
+import { useEffect, useRef } from "react";
+import i18n from "i18next";
 export default function Navbar() {
   const [t] = useTranslation();
   const dropdownRef = useRef(null);
 
   const showDropdown = () => {
     if (dropdownRef.current) {
-      dropdownRef.current.style.display = 'block';
+      dropdownRef.current.style.display = "block";
     }
   };
 
   const hideDropdown = () => {
     if (dropdownRef.current) {
-      dropdownRef.current.style.display = 'none';
+      dropdownRef.current.style.display = "none";
     }
   };
 
   useEffect(() => {
     const handleLanguageChange = () => {
-      if (dropdownRef.current) {
-        dropdownRef.current.style.display = "none";
-      }
+      hideDropdown();
     };
 
     i18n.on("languageChanged", handleLanguageChange);
@@ -43,11 +41,15 @@ export default function Navbar() {
         <div className="title container">
           <ul>
             <li>
-              <h1 className=" left" lang={i18n.language}>
-                {t("Header-h")}
+              <h1 className="left" lang={i18n.language}>
+                {t("Header-h1")}
+                <p> {t("Header-h2")}</p>
               </h1>
             </li>
-            <li className="diffrint flex-fill bd-highlight left" lang={i18n.language}>
+            <li
+              className="diffrint flex-fill bd-highlight left"
+              lang={i18n.language}
+            >
               {t("Header-p")}
             </li>
             <li>
@@ -94,54 +96,41 @@ export default function Navbar() {
                     <FaPhoneAlt /> {t("Navbar-contact")}
                   </a>
                 </li>
-                <li
-              className="nav-item dropdown  nav-link dropdown-toggle fs-5 "
-              id="navbarDropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <div
-                className="dropdown lanBtn item5 hidden"
-                onMouseEnter={showDropdown}
-                onMouseLeave={hideDropdown}
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-            
-                  <LuLanguages /> ▼
-               
-                <div
-                  className="dropdown-content"
-                  ref={dropdownRef}
-                  style={{ display: "none" }}
-                >
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("ja");
-                    }}
-                    className="dropdown-item"
+                <li className="nav-item dropdown ms-3 nav-link dropdown-toggle fs-5">
+                  <div
+                    className="dropdown lanBtn item5 hidden"
+                    onMouseEnter={showDropdown}
+                    onMouseLeave={hideDropdown}
+                    onClickCapture={showDropdown}
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <LuLanguages /> ▼
+                    <div
+                      className="dropdown-content"
+                      ref={dropdownRef}
+                      style={{ display: "none" }}
                     >
-                    日本語
-                  </a>
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("en");
-                    }}
-                    className="dropdown-item"
-                  >
-                    English
-                  </a>
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("ar");
-                    }}
-                    className="dropdown-item"
-                  >
-                    العربية
-                  </a>
-                </div>
-              </div>
-            </li>
+                      <a
+                        onClick={() => i18n.changeLanguage("ja")}
+                        className="dropdown-item"
+                      >
+                        日本語
+                      </a>
+                      <a
+                        onClick={() => i18n.changeLanguage("en")}
+                        className="dropdown-item"
+                      >
+                        English
+                      </a>
+                      <a
+                        onClick={() => i18n.changeLanguage("ar")}
+                        className="dropdown-item"
+                      >
+                        العربية
+                      </a>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
