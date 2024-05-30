@@ -43,8 +43,9 @@
           cursor: pointer;
           background: var(--color--green);
           color: white;
-          padding-top: 3vh;
-          padding-bottom: 3vh;
+          padding-top: 2.5vh;
+          padding-bottom: 2.5vh;
+          font-size: 4vh;
         }
       }
       input[type="submit"]:hover{

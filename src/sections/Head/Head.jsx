@@ -1,11 +1,26 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 export default function Head() {
   const [t] = useTranslation();
   return (
-    <>
+    <div>
       <HelmetProvider>
         <Helmet>
+<meta  name="description" content={t("About-p")}/>
+<meta property="og:title" content={t("title")}/>
+    <meta property="og:description" content={t("About-p")}/>
+    <meta property="og:image" content="https://arabicsc.com/assets/%D9%84%D9%88%D8%BA%D9%…%D8%A9-1%D8%AC%D8%AF%D9%8A%D8%AF-01-DYxFTYrW.webp"/>
+    <meta property="og:url" content="https://arabicsc.com/"/>
+
+
+    <meta name="twitter:title" content={t("title")}/>
+    <meta name="twitter:description" content={t("About-p")}/>
+    <meta name="twitter:image" content="https://arabicsc.com/assets/%D9%84%D9%88%D8%BA%D9%…%D8%A9-1%D8%AC%D8%AF%D9%8A%D8%AF-01-DYxFTYrW.webp"/>
+
+
+
+
           <meta
             name="keywords"
             content="
@@ -21,7 +36,7 @@ export default function Head() {
         دعم إضافة اللغات الى مواقع الويب,
         تسجيل الاصوات و تفريغها,
         تخطيط و اعداد الجولات السياحية,
-  
+        Sawa Group,
         Import & Export,
         Translation & Proofreading,
         Planning and preparing news reports,
@@ -52,6 +67,6 @@ export default function Head() {
           <title>{t("title")}</title>
         </Helmet>
       </HelmetProvider>
-    </>
+    </div>
   );
 }

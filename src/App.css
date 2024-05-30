@@ -27,7 +27,7 @@
     animation-timing-function: linear;
   }
   div#root{
-    background-image: url("../src/assets/photo_2024-05-22_16-51-25.jpg");
+    background-color: white;
   }
   @media screen and (min-width:5px) and (max-width:600px){
     .Loading{
