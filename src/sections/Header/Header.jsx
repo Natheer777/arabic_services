@@ -1,13 +1,13 @@
 import { useRef, useEffect } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 
 import "./Header.css";
-import video from '../../assets/video_2024-05-30_19-06-11.mp4'
+// import video from '../../assets/video_2024-05-30_19-06-11.mp4'
 
 export default function Header() {
   const swiperRef = useRef(null);
@@ -27,13 +27,13 @@ export default function Header() {
   return (
     <div className="container">
       <div className="Main-img container">
-        <div className="video">
+        {/* <div className="video"> */}
 
-        <video muted  autoPlay className="w-50"  >
+        {/* <video muted  autoPlay className="w-50"  >
           <source src={video}  type="video/mp4"/>
-        </video>
+        </video> */}
         </div>
-        {/* <Swiper
+        <Swiper
           ref={swiperRef}
           dir="ltr"
           spaceBetween={30}
@@ -52,8 +52,8 @@ export default function Header() {
           <SwiperSlide className="img6"></SwiperSlide>
 
           <SwiperSlide className="img10"></SwiperSlide>
-        </Swiper> */}
+        </Swiper>
       </div>
-    </div>
+    // </div>
   );
 }
