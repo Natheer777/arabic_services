@@ -12,6 +12,8 @@ import { MdEmail } from "react-icons/md";
 import { FaLine } from "react-icons/fa";
 import Logo from './assets/Logo/لوغو-لغة-1جديد-01.webp'
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import video from './assets/lv_0_٢٠٢٤٠٦٠٢١٨١٣٥٩.mp4'
+
 const languages = [
   {
     code: "ar",
@@ -100,12 +102,12 @@ useEffect(() => {
   setLoading(true);
   setTimeout(() => {
     setLoading(false);
-  }, 4000);
+  }, 9000);
 }, []);
 ////
 setTimeout(() => {
   document.querySelector(".social").style.display = "block";
-}, 5000);
+}, 9000);
   return (
     <>
    
@@ -136,7 +138,9 @@ setTimeout(() => {
         </ul>
       </div>
       {loading ? (
-        <img className="Loading" src={Logo} alt="" />
+        <video muted  autoPlay className="Loading "  >
+        <source src={video}  type="video/mp4"/>
+      </video>
       ) : (
         <>
           <Router>

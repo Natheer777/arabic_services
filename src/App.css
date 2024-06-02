@@ -16,24 +16,24 @@
     list-style: none;
   }
    .Loading {
-    width: 10vh;
+    width: 40vh;
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    animation-name: Loading;
+    /* animation-name: Loading;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
   }
   div#root{
     background-color: white;
   }
-  @media screen and (min-width:5px) and (max-width:600px){
+  /* @media screen and (min-width:5px) and (max-width:600px){
     .Loading{
       left: 40%;
     }
-  }
+  } */
   @keyframes Loading {
     0% {
       transform: scale(1);
