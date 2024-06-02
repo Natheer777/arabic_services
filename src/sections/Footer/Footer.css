@@ -38,11 +38,20 @@
 }
 
 .adress {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
   line-height: 1.5;
+  text-align: start;
 }
 
+@media screen and (min-width:1200px) and (max-width:1440px){
+  .adress[lang="en"]{
+    font-size: 17px;
+    }  
+}
+.list-unstyled{
+  text-align: start;
+}
 
 svg{
   font-size: 20px;
