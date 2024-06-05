@@ -102,12 +102,12 @@ useEffect(() => {
   setLoading(true);
   setTimeout(() => {
     setLoading(false);
-  }, 9000);
+  }, 4000);
 }, []);
 ////
 setTimeout(() => {
   document.querySelector(".social").style.display = "block";
-}, 9000);
+}, 4000);
   return (
     <>
    
@@ -138,9 +138,7 @@ setTimeout(() => {
         </ul>
       </div>
       {loading ? (
-        <video muted  autoPlay className="Loading "  >
-        <source src={video}  type="video/mp4"/>
-      </video>
+       <img src={Logo} className='Loading' alt="" />
       ) : (
         <>
           <Router>
