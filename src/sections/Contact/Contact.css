@@ -50,9 +50,9 @@
           background: var(--color--green);
           color: white;
           font-size: 1rem;
-          padding: 18px;
           width: 120px;
           margin: 0 20px;
+          height: 60px;
         }
       }
       input[type="submit"]:hover{
@@ -80,7 +80,7 @@
     
       }
       .btnfolder svg{
-        font-size: 4vh;
+        font-size: 2rem;
         color: var(--color--green);
       }
       .visb{
