@@ -50,8 +50,8 @@
           background: var(--color--green);
           color: white;
           font-size: 1rem;
-          padding: 2.8vh 0 3.4vh 0;
-          width: 20vh;
+          padding: 18px;
+          width: 120px;
           margin: 0 20px;
         }
       }
