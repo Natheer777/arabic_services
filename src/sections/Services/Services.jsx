@@ -16,8 +16,8 @@ export default function Services() {
     <>
       <div className="container" id="Services">
         <div className="row rowServices">
-          <h1 className="ServicesTitle">{t("Services-h")}</h1>
-          <p className="ServicesTitle">{t("Services-p")}</p>
+          <h1 className="ServicesTitle same">{t("Services-h")}</h1>
+          <p className="ServicesTitle same">{t("Services-p")}</p>
           <div className="CaRd">
             <div className="serv1 shadow   top">
               {card[0]}

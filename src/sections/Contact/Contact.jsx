@@ -18,7 +18,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mb-5 mt-5">
+    <div className="container Contactt same mb-5 mt-5">
  
 
       <form method="POST" action="https://formsubmit.co/contact@arabicsc.com" encType="multipart/form-data" id="Contact">
@@ -51,9 +51,9 @@ export default function Contact() {
               <button className="delete-file-btn" onClick={handleFileDelete}><FaTrash /></button>
             </div>
           )}
+        <input type="submit" value={t('Send-form')} />
         </div>
 
-        <input type="submit" value={t('Send-form')} />
         <input type="hidden" name="_captcha" value="false" />
       </form>
     </div>

@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="Ulfooter">
               <li>
             <a className="text-white">
-              Copyright © 2022 Arabic Services Center. All Rights Reserved.
+              Copyright © 2022 ARABIC SERVICES CENTER. All Rights Reserved.
             </a></li>
               <li className="App">       
       <DesktopViewButton />

@@ -25,7 +25,7 @@ export default function Header() {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div className="container">
+    <div className="container dif">
       <div className="Main-img container">
         {/* <div className="video"> */}
 
@@ -49,7 +49,7 @@ export default function Header() {
           <SwiperSlide className="img2"></SwiperSlide>
 
           <SwiperSlide className="img5"></SwiperSlide>
-          <SwiperSlide className="img6"></SwiperSlide>
+          {/* <SwiperSlide className="img6"></SwiperSlide> */}
 
           <SwiperSlide className="img10"></SwiperSlide>
         </Swiper>

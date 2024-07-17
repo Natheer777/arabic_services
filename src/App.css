@@ -130,3 +130,11 @@
     background-color: #24c662;
   }
   
+  
+@media screen and (max-width:750px) {
+
+  .same{
+    padding:0 30px !important;
+  }
+
+}

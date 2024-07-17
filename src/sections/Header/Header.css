@@ -13,9 +13,9 @@
 .img5 {
   background-image: url("../../assets/edite/واجهة-6.webp");
 }
-.img6 {
-  background-image: url("../../assets/edite/واجهة-67.webp");
-}
+/* .img6 {
+  background-image: url("../../assets/edite/واجهة-6.webp");
+} */
 /* .img7 {
   background-image: url("../../assets/edite/واجهة-جديدة-2.webp");
 } */
@@ -131,6 +131,9 @@
   .title h1 {
     font-size: 4vh;
   }
+  .dif{
+    width: calc(100% - 6%);
+  }
 }
 @media screen and (min-width: 476px) and (max-width: 540px) {
   .img1,
@@ -153,6 +156,9 @@
 
     font-size: 1.8rem;
   }
+  .dif{
+    width: calc(100% - 6%);
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 476px) {
@@ -174,6 +180,9 @@
   .title h1 {
     margin-top: 1.2rem;
     font-size: 1.8rem;
+  }
+  .dif{
+    width: calc(100% - 6%);
   }
 }
 @media screen and (min-width: 5px) and (max-width: 400px) {
@@ -199,5 +208,8 @@
   .title h1 {
     margin-top: 1.2rem;
     font-size: 1.5rem;
+  }
+  .dif{
+    width: calc(100% - 6%);
   }
 }
